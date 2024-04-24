@@ -1,0 +1,805 @@
+/** 
+FUENTES
+font-family: "Montserrat", sans-serif;
+font-family: "Arimo", sans-serif;
+font-family: "Ysabeau Office", sans-serif;
+
+COLORES
+#00F0FF
+#FF9212
+**/
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+header{
+    font-family: "Montserrat", sans-serif;
+    background-image: url("../assets/img/fondonegrorueda.jpg");
+    background-size: cover;
+    width: 100%;
+    height:100vh;
+    padding: .625rem;
+}
+.headerPages{
+    height: 350px;
+}
+.flexboxnav{
+    background-color: #1b202052;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.flexbox-ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    font-size: 1.25rem;
+    position: sticky;
+    top: 0;
+}
+.flexbox-ul li a{
+    color: white;
+    text-decoration: none;
+}
+.flexbox-ul li a:hover {
+    color: #00f0ff;
+    text-decoration: none;
+}
+header h1{
+    color: #ffffff;
+    font-weight:lighter;
+    font-size: 150px;
+}
+.nombre-home{
+padding-top: 9.375rem;
+}
+.nombre-home h2{
+    font-size: 50px;
+    font-weight:200;
+    color:#00F0FF;
+    padding-left: .875rem;
+    margin-bottom: 6.25rem;
+}
+header section a{
+    margin-left: 10.625rem;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: transparent;
+    border: 2px solid #FF9212; /* Border color */
+    border-radius: 20px; /* Round border edges */
+    cursor: pointer;
+    outline: none;
+    font-size: 1.875rem;
+    color: #FF9212;
+    text-decoration: none;
+}
+header section a:hover {
+    background: #FF9212; /* Background color on hover */
+    color: rgb(65, 64, 64); /* Text color on hover */
+}
+main{
+    font-family: "Ysabeau Office", sans-serif;
+    background-color: #050606;
+    width: 100%;
+}
+main section {
+    height: 700px;
+}
+main section h4{
+    font-family: "Arimo", sans-serif;
+    font-size: 1.5625rem;
+    font-weight: 7;
+    color:white;
+    margin: 8.125rem;
+}
+main section h2{
+    font-family: "Arimo", sans-serif;
+    font-size: 15;
+    font-weight: 7;
+    color:white;
+}
+main div a{
+    margin-left: 10px;
+}
+section form .datos-personales{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    font-family: "Arimo", sans-serif;
+    font-size: 15;
+    font-weight: 7;
+    color:white;
+    grid-area: div1;
+}
+main section h3{
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    font-weight: bolder;
+    color:#00F0FF;
+}
+main div h3{
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    font-weight: bolder;
+    color:#00F0FF;
+    margin-bottom: 30px;
+}
+main section h4{
+    font-family: "Arimo", sans-serif;
+    font-size: 15;
+    font-weight: 7;
+    color:white;
+}
+main article{
+    margin-left: 160px;
+    margin-right: 6.25rem;
+    padding: 5.625rem;
+    background-color: #232d2d97;
+    border-radius: 1.25rem;
+    padding-top: 50px;
+}
+#services a img{
+    width: 450px;
+    height: 677px;
+}
+#services{
+    margin-left: 25px;
+}
+main .main-project{
+    width: 100%;
+    height: 1000px;
+    margin-left: 50px;
+    padding-top: 50px;
+}
+.img-airplane{
+    width: 550px;
+    height: 600px;
+    grid-area:div2;
+    margin-right: 20px;
+}
+footer {
+    background-color: #002822; /* Fondo oscuro teal */
+    color: #ffffff; /* Texto en blanco */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Texto centrado */
+}
+#logo{
+    width: 135px;
+    height: 46px;
+    margin-left: 30px;
+}
+/* Estilo general del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    width: 80%; /* Ancho del formulario */
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin-left: 50px; /* Centrar el formulario en la página */
+    padding-top: 50px;
+}
+
+/* Estilo del contenedor del formulario */
+fieldset {
+    border: none;
+    padding: 1px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de la leyenda */
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Arimo", sans-serif;
+    font-size: 32px;
+    font-weight: 100;
+    color: #FF9212;
+    padding-left: 130px;
+}
+
+/* Estilo de las etiquetas */
+label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+/* Estilo de los inputs y textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Estilo del botón de enviar */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #00F0FF;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #FF9212;
+}
+
+/* Estilo para resaltar campos requeridos */
+input:required,
+textarea:required {
+    border-color: #007bff;
+}
+
+/* Estilo para el mensaje de validación */
+input:invalid,
+textarea:invalid {
+    border-color: #dc3545;
+}
+
+/* Estilo para el mensaje de validación personalizado */
+input:invalid + span,
+textarea:invalid + span {
+    display: inline-block;
+    font-size: 0.8em;
+    color: #dc3545;
+    margin-top: 5px;
+}
+.grid-contact{
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100%;
+    grid-template-areas: "div1 div2";
+}
+
+
+@media(max-width: 1024px) {
+    header {
+        font-family: "Montserrat", sans-serif;
+        background-image: url("../assets/img/fondonegrorueda.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        padding: .625rem;
+    }
+    
+    .headerPages {
+        height: 250px;
+    }
+    
+    .flexboxnav {
+        background-color: #1b202052;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;;
+    }
+    .flexboxnav a img{
+        margin-right: 40px;
+    }
+    
+    .flexbox-ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2.5rem;
+        font-size: 16px;
+        position: sticky;
+        top: 0;
+    }
+    
+    .flexbox-ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .flexbox-ul li a:hover {
+        color: #00f0ff;
+        text-decoration: none;
+    }
+    
+    header h1 {
+        color: #ffffff;
+        font-weight: lighter;
+        font-size: 100px;
+    }
+    
+    .nombre-home {
+        padding-top: 9.375rem;
+    }
+    
+    .nombre-home h2 {
+        font-size: 30px;
+        font-weight: 200;
+        color: #00f0ff;
+        padding-left: .875rem;
+        margin-bottom: 6.25rem;
+    }
+    
+    header section a {
+        margin-left: 150px;
+        padding: 10px 20px;
+        font-size: 14px;
+        background: transparent;
+        border: 2px solid #ff9212; /* Color del borde */
+        border-radius: 20px; /* Bordes redondeados */
+        cursor: pointer;
+        outline: none;
+        font-size: 1.875rem;
+        color: #ff9212;
+        text-decoration: none;
+    }
+    
+    header section a:hover {
+        background: #ff9212; /* Color de fondo al pasar el mouse */
+        color: rgb(65, 64, 64); /* Color del texto al pasar el mouse */
+    }
+    
+    /* Estilos del main */
+    main {
+        font-family: "Ysabeau Office", sans-serif;
+        background-color: #050606;
+        width: 100%;
+    }
+    
+    main section {
+        height: 700px;
+    }
+    
+    main section h4 {
+        font-family: "Arimo", sans-serif;
+        font-size: 16;
+        font-weight: 7;
+        color: white;
+        margin: 80px;
+    }
+    
+    main section h2 {
+        font-family: "Arimo", sans-serif;
+        font-size: 16;
+        font-weight: 7;
+        color: white;
+    }
+    #services a img{
+        width: 320px;
+        height: 501px;
+    }
+    #services{
+        display:flex;
+        justify-items: center;
+    }
+    main div a {
+        margin-left: 10px;
+    }
+    section form .datos-personales {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%; /* Ancho del formulario */
+        max-width: 600px; /* Ancho máximo del formulario */
+        margin: 0 auto; /* Centrar el formulario */
+        padding-top: 0px;
+        width: 600px;
+        height: 610px;
+    }
+    
+    main section h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        font-weight: bolder;
+        color: #00f0ff;
+    }
+    
+    main div h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        font-weight: bolder;
+        color: #00f0ff;
+        margin-bottom: 30px;
+    }
+    
+    main section h4 {
+        font-family: "Arimo", sans-serif;
+        font-size: 15;
+        font-weight: 7;
+        color: white;
+    }
+    
+    main article {
+        margin-left: 160px;
+        margin-right: 6.25rem;
+        padding: 5.625rem;
+        background-color: #232d2d97;
+        border-radius: 1.25rem;
+        padding-top: 50px;
+    }
+    
+    main .main-project {
+        width: 100%;
+        height: 1000px;
+        margin-left: 50px;
+        padding-top: 50px;
+    }
+    main .main-project section a img{
+        width: 370px;
+        height: 363px;
+    }
+    .img-airplane {
+        width: 100%; /* Ajuste para que la imagen sea responsiva */
+        height: auto; /* Ajuste para que la imagen sea responsiva */
+        max-width: 500px; /* Limitar el ancho máximo de la imagen */
+        margin-right: 600px;
+        display: none;
+    }
+    
+    /* Estilos del footer */
+    footer {
+        font-family: "Arimo", sans-serif;
+        color: white;
+        font-size: 20px;
+        width: 100%;
+        height: 300px;
+        background-color: #003033;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+    }
+    
+    footer div h4 {
+        font-family: "Arimo", sans-serif;
+        font-size: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #logo {
+        width: 135px;
+        height: 46px;
+        margin-left: 30px;
+    }
+    
+    /* Estilo general del formulario */
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 80%; /* Ancho del formulario */
+        max-width: 600px; /* Ancho máximo del formulario */
+        margin: 0 auto; /* Centrar el formulario */
+        padding-top: 50px;
+    }
+    
+    /* Estilo del contenedor del formulario */
+    fieldset {
+        border: none;
+        padding: 1px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Estilo de la leyenda */
+    legend {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        padding-left: 90px;
+    }
+    
+    /* Estilo de las etiquetas */
+    label {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+    }
+    
+    /* Estilo de los inputs y textarea */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+}
+}
+@media(max-width: 768px) {
+    header {
+        font-family: "Montserrat", sans-serif;
+        background-image: url("../assets/img/fondonegrorueda.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 600px;
+    }
+    
+    .headerPages {
+        height: 250px;
+    }
+    
+    .flexboxnav {
+        background-color: #1b202052;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;;
+    }
+    .flexboxnav a img{
+        margin-right: 20px;
+    }
+    
+    .flexbox-ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2.5rem;
+        font-size: 12px;
+        position: sticky;
+        top: 0;
+    }
+    
+    .flexbox-ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .flexbox-ul li a:hover {
+        color: #00f0ff;
+        text-decoration: none;
+    }
+    
+    header h1 {
+        color: #ffffff;
+        font-weight: lighter;
+        font-size: 60px;
+        margin-left: 50px;
+    }
+    
+    .nombre-home {
+        padding-top: 9.375rem;
+    }
+    
+    .nombre-home h2 {
+        font-size: 20px;
+        font-weight: 200;
+        color: #00f0ff;
+        padding-left: 50px;
+        margin-bottom: 6.25rem;
+    }
+    
+    header section a {
+        margin-left: 150px;
+        padding: 10px 20px;
+        background: transparent;
+        border: 2px solid #ff9212; /* Color del borde */
+        border-radius: 20px; /* Bordes redondeados */
+        cursor: pointer;
+        outline: none;
+        font-size: 16px;
+        color: #ff9212;
+        text-decoration: none;
+    }
+    
+    header section a:hover {
+        background: #ff9212; /* Color de fondo al pasar el mouse */
+        color: rgb(65, 64, 64); /* Color del texto al pasar el mouse */
+    }
+    
+    /* Estilos del main */
+    main {
+        font-family: "Ysabeau Office", sans-serif;
+        background-color: #050606;
+        width: 100%;
+    }
+    
+    main section {
+        height: 500px;
+    }
+    
+    main section h4 {
+        font-family: "Arimo", sans-serif;
+        font-size: 16px;
+        font-weight: 7;
+        color: white;
+        margin: 80px;
+    }
+    
+    main section h2 {
+        font-family: "Arimo", sans-serif;
+        font-size: 16;
+        font-weight: 7;
+        color: white;
+    }
+    #services a img{
+        width: 240px;
+        height: 380px;
+    }
+    main div a {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        margin-left: 0px;
+    }
+    section form .datos-personales {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%; /* Ancho del formulario */
+        max-width: 600px; /* Ancho máximo del formulario */
+        margin: 0 auto; /* Centrar el formulario */
+        padding-top: 0px;
+        width: 600px;
+        height: 610px;
+    }
+    
+    main section h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: bolder;
+        color: #00f0ff;
+        padding-top: 40px;
+    }
+    
+    main div h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: bolder;
+        color: #00f0ff;
+        margin-bottom: 30px;
+    }
+    
+    main section h4 {
+        font-family: "Arimo", sans-serif;
+        font-size: 15;
+        font-weight: 7;
+        color: white;
+    }
+    
+    main article {
+        margin-left: 160px;
+        margin-right: 6.25rem;
+        padding: 5.625rem;
+        background-color: #232d2d97;
+        border-radius: 1.25rem;
+        padding-top: 50px;
+    }
+    main .main-project section a{
+        width: 250px;
+        height: 240px;
+        margin-bottom: 20px;
+        margin-left: 70px;
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "project1 project2"
+        "project3 project4";
+    }
+    main .main-project section .project1{
+        width: 250px;
+        height: 240px;
+        grid-area: project1;
+        margin-bottom: 20px;
+    }
+    main .main-project section .project2{
+        width: 250px;
+        height: 240px;
+        grid-area: project2;
+        margin-bottom: 20px;
+    }
+    main .main-project section .project3{
+        width: 250px;
+        height: 240px;
+        grid-area: project3;
+    }
+    main .main-project section .project4{
+        width: 250px;
+        height: 240px;
+        grid-area: project4;
+    }
+    .img-airplane {
+        width: 100%; /* Ajuste para que la imagen sea responsiva */
+        height: auto; /* Ajuste para que la imagen sea responsiva */
+        max-width: 500px; /* Limitar el ancho máximo de la imagen */
+        margin-right: 600px;
+        display: none;
+    }
+    
+    /* Estilos del footer */
+    footer {
+        font-family: "Arimo", sans-serif;
+        color: white;
+        font-size: 20px;
+        width: 100%;
+        height: 300px;
+        background-color: #003033;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+    }
+    
+    footer div h4 {
+        font-family: "Arimo", sans-serif;
+        font-size: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #logo {
+        width: 135px;
+        height: 46px;
+        margin-left: 30px;
+    }
+    
+    /* Estilo general del formulario */
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 80%; /* Ancho del formulario */
+        max-width: 600px; /* Ancho máximo del formulario */
+        margin: 0 auto; /* Centrar el formulario */
+        padding-top: 50px;
+    }
+    
+    /* Estilo del contenedor del formulario */
+    fieldset {
+        border: none;
+        padding: 1px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Estilo de la leyenda */
+    legend {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        padding-left: 90px;
+    }
+    
+    /* Estilo de las etiquetas */
+    label {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+    }
+    
+    /* Estilo de los inputs y textarea */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+}
+}
