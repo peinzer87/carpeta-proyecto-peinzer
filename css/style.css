@@ -38,8 +38,6 @@ header{
     list-style: none;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     gap: 80px;
     font-size: 1.25rem;
     position: sticky;
@@ -150,11 +148,14 @@ main article{
     padding-top: 50px;
 }
 #services a img{
-    width: 450px;
+    width: 475px;
     height: 677px;
+    margin-right: .25rem;
 }
-#services{
-    margin-left: 25px;
+#services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 main .main-project{
     width: 100%;
@@ -169,15 +170,16 @@ main .main-project{
     margin-right: 20px;
 }
 footer {
-    background-color: #002822; /* Fondo oscuro teal */
+    background-color: #000909; /* Fondo oscuro teal */
     color: #ffffff; /* Texto en blanco */
-    padding: 20px; /* Espaciado interno */
+    padding: 10px; /* Espaciado interno */
     text-align: center; /* Texto centrado */
+    font-size: 20px;
 }
 #logo{
     width: 135px;
     height: 46px;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 /* Estilo general del formulario */
 form {
@@ -267,12 +269,14 @@ textarea:invalid + span {
 }
 .grid-contact{
     width: 100%;
-    height: 700px;
+    height: 1000px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 100%;
     grid-template-areas: "div1 div2";
 }
+
+
 
 
 @media(max-width: 1024px) {
@@ -457,28 +461,6 @@ textarea:invalid + span {
         margin-right: 600px;
         display: none;
     }
-    
-    /* Estilos del footer */
-    footer {
-        font-family: "Arimo", sans-serif;
-        color: white;
-        font-size: 20px;
-        width: 100%;
-        height: 300px;
-        background-color: #003033;
-        display: flex;
-        flex-direction: row;
-        align-items: end;
-    }
-    
-    footer div h4 {
-        font-family: "Arimo", sans-serif;
-        font-size: 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
     #logo {
         width: 135px;
         height: 46px;
@@ -691,14 +673,13 @@ textarea:invalid + span {
         border-radius: 1.25rem;
         padding-top: 50px;
     }
-    main .main-project section a{
+    main .main-project section{
         width: 250px;
         height: 240px;
         margin-bottom: 20px;
         margin-left: 70px;
         display: grid;
         grid-template-columns: 300px 300px;
-        grid-template-rows: 1fr 1fr;
         grid-template-areas: 
         "project1 project2"
         "project3 project4";
@@ -732,32 +713,239 @@ textarea:invalid + span {
         margin-right: 600px;
         display: none;
     }
-    
-    /* Estilos del footer */
-    footer {
-        font-family: "Arimo", sans-serif;
-        color: white;
-        font-size: 20px;
-        width: 100%;
-        height: 300px;
-        background-color: #003033;
-        display: flex;
-        flex-direction: row;
-        align-items: end;
-    }
-    
-    footer div h4 {
-        font-family: "Arimo", sans-serif;
-        font-size: 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
     #logo {
         width: 135px;
         height: 46px;
         margin-left: 30px;
+    }
+    
+    /* Estilo general del formulario */
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 80%; /* Ancho del formulario */
+        max-width: 600px; /* Ancho máximo del formulario */
+        margin: 0 auto; /* Centrar el formulario */
+        padding-top: 50px;
+    }
+    
+    /* Estilo del contenedor del formulario */
+    fieldset {
+        border: none;
+        padding: 1px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Estilo de la leyenda */
+    legend {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        padding-left: 90px;
+    }
+    
+    /* Estilo de las etiquetas */
+    label {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+    }
+    
+    /* Estilo de los inputs y textarea */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+}
+}
+@media(max-width: 428px) {
+    header {
+        font-family: "Montserrat", sans-serif;
+        background-image: url("../assets/img/fondonegrorueda.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 340px;
+    }
+    
+    .headerPages {
+        height: 140px;
+    }
+    
+    .flexboxnav {
+        background-color: #1b202052;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 30px;
+    }
+    .flexbox-ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2.5rem;
+        font-size: 12px;
+        position: sticky;
+        top: 0;
+    }
+    
+    .flexbox-ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .flexbox-ul li a:hover {
+        color: #00f0ff;
+        text-decoration: none;
+    }
+    header h1 {
+        color: #ffffff;
+        font-weight: lighter;
+        font-size: 40px;
+        margin-left: 50px;
+    }
+    
+    .nombre-home {
+        padding-top: 40px;
+    }
+    
+    .nombre-home h2 {
+        font-size: 20px;
+        font-weight: 200;
+        color: #00f0ff;
+        padding-left: 50px;
+        margin-bottom: 6.25rem;
+    }
+    
+    header section a {
+        margin-left: 50px;
+        padding: 10px 20px;
+        background: transparent;
+        border: 2px solid #ff9212; /* Color del borde */
+        border-radius: 20px; /* Bordes redondeados */
+        cursor: pointer;
+        outline: none;
+        font-size: 16px;
+        color: #ff9212;
+        text-decoration: none;
+    }
+    
+    header section a:hover {
+        background: #ff9212; /* Color de fondo al pasar el mouse */
+        color: rgb(65, 64, 64); /* Color del texto al pasar el mouse */
+    }
+    
+    /* Estilos del main */
+    main {
+        font-family: "Ysabeau Office", sans-serif;
+        background-color: #050606;
+        width: 100%;
+        height: 1100px;
+    }
+    
+    main section {
+        height: 600px;
+    }
+    
+    main section h4 {
+        font-family: "Arimo", sans-serif;
+        font-size: 12px;
+        font-weight: 7;
+        color: white;
+        margin: 80px;
+    }
+    
+    main section h2 {
+        font-family: "Arimo", sans-serif;
+        font-size: 12;
+        font-weight: 7;
+        color: white;
+    }
+    #services a img{
+        width: 140px;
+        height: 270px;
+        margin: 2px;
+    }
+    #services{
+        margin-left: 0%;
+    }
+    main div a {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        margin-left: 0px;
+    }
+    section form .datos-personales {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%; /* Ancho del formulario */
+        max-width: 350px; /* Ancho máximo del formulario */
+        margin: 0 auto; /* Centrar el formulario */
+        padding-top: 0px;
+        width: 600px;
+        height: 610px;
+    }
+    
+    main section h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: bolder;
+        color: #00f0ff;
+        padding-top: 40px;
+    }
+    
+    main div h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: bolder;
+        color: #00f0ff;
+        margin-bottom: 30px;
+    }
+    
+    main section h4 {
+        font-family: "Arimo", sans-serif;
+        font-size: 15;
+        font-weight: 7;
+        color: white;
+    }
+    
+    main article {
+        margin-left: 160px;
+        margin-right: 6.25rem;
+        padding: 5.625rem;
+        background-color: #232d2d97;
+        border-radius: 1.25rem;
+        padding-top: 50px;
+    }
+    main .main-project section{
+        width: 150px;
+        height: 140px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 90px;
+    }
+    .img-airplane {
+        width: 100%; /* Ajuste para que la imagen sea responsiva */
+        height: auto; /* Ajuste para que la imagen sea responsiva */
+        max-width: 500px; /* Limitar el ancho máximo de la imagen */
+        margin-right: 600px;
+        display: none;
+    }
+    
+    #logo {
+        width: 70px;
+        height: 25px;
+        margin-left: 8px;
     }
     
     /* Estilo general del formulario */
