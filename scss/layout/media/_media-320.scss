@@ -1,0 +1,276 @@
+@media(max-width: 320px) {  //*HEADER DEL HOME*//
+    .header-index{
+            font-family: "Montserrat", sans-serif;
+            background-image: url("../assets/img/fondonegrorueda.jpg");
+            width: 100%;
+            height: 500px;
+            padding: .625rem;
+            .flexboxnav {
+                background-color: #1b202052;
+        }
+        .flexboxnav a img{
+            margin-right: 16px;
+        }
+        
+        .flexbox-ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content:left ;
+            gap: 8px;
+            position: sticky;
+            top: 0;
+            padding: 8px;
+        }
+        
+        .flexbox-ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        
+        .flexbox-ul li a:hover {
+            color: #00f0ff;
+            text-decoration: none;
+        }
+        .collapse.navbar-collapse {
+            position: absolute; /* Establece la posición del menú desplegable */
+            top: 100%; /* Alinea el menú desplegable justo debajo del navbar */
+            right: 0;
+            z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
+            background-color: #1b202052; /* Opcional: establece el color de fondo */
+            border: 1px solid #070707; /* Opcional: añade un borde */
+            padding: 0.5rem 0.55rem; /* Opcional: añade espacio interno */
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); 
+        }
+        .nombre-home h1{
+            color: #ffffffcb;
+            font-weight:lighter;
+            font-size: 24px;
+            letter-spacing: 20px;
+            padding: 3px;
+            margin-top: 15px;
+        }
+        .nombre-home h2 {
+            font-size: 12px;
+            font-weight: 200;
+            color: #00f0ff;
+            padding-left: 3px;
+            margin-bottom: 70px;
+        }
+        /* boton CTA home */
+        section a{
+            @include flex (column,none,center,none);
+            padding: 10px 34px;
+            background:transparentize($color: #00000097, $amount: 0);
+            border: 1px solid #00ffe110; /* Border color */
+            border-radius: 44px; /* Round border edges */
+            cursor: pointer;
+            outline: none;
+            font-size: 12px;
+            color: $color-principal-texto;
+            text-decoration: none;
+            width: fit-content; /* Ancho del botón ajustado al contenido */
+            margin: 0 auto;
+            &:hover{
+                background: #00ffe15d; /* Background color on hover */
+                color: #00000097(255, 255, 255, 0); /* Text color on hover */
+              }
+              &:active{
+                transform: scale(0.97); /* Escala el botón al 98% de su tamaño original */
+                box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
+              }
+        }
+    }
+    //**//FIN HEADER HOME
+    
+    #logo{
+        width: 121px;
+        height: 41px;
+    }
+        .headerPages {  //*ALTURA de las paginas secundarias*//
+            height: 250px;
+            }
+        .headerPages h1{ //*titulo de paginas secundarias*//
+            font-size: 44px;
+            margin-top: 130px;
+        }
+        .mainServices h2{   //*texto de las paginas de servicios *//
+            font-size: 12px;
+            padding: 30px;
+        }
+    
+    
+    
+    //*main pagina HOME*//
+    .main-index{
+        background-color: $color-fondo;
+        width: 100%;
+        height: 900px;
+        .main-section h3{
+            display: flex;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: lighter;
+            color:#00F0FF;
+            padding-top: 50px;
+        }
+        .main-section h4{
+            font-family: "Arimo", sans-serif;
+            font-size: 12PX;
+            font-weight: 7;
+            color:white;
+            margin: 15px;
+            padding: 25px;
+        }
+        .our-services h3{
+            display: flex;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: lighter;
+            color:#00F0FF;
+            margin: 40px;
+        }
+        #services-cards a img{
+            width: 105px;
+            height: 210px;
+            filter:none;
+        }
+        #services-cards a img:hover{
+            transform: scale(1.1);
+        }
+        #services-cards{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+    
+    
+    
+    //*main pagina de projectos (imagenes)  *//
+    .main-project{
+        height: 1350px;
+        background-color: $color-fondo;
+        .projects{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+        }
+        .projects a img{
+            width: 220px;
+            height: 220px;
+            margin-top: 100px;
+            gap: 1px;
+    
+            filter:none;
+        }
+        .projects a img:hover{
+            filter:drop-shadow(0rem 0px 0 #88f7ff);
+            transform: scale(1.1);
+        }
+    }
+    
+    
+    /* MAIN pagina de contacto */
+    .grid-contact{
+        width: 100%;
+        height: 1000px;
+        background-color: $color-fondo;
+        .datos-personales{
+            width: 250px;
+            font-family: "Arimo", sans-serif;
+            font-size: 15;
+            font-weight: 7;
+            color:white;
+        }
+        form {
+            width: 80%; /* Ancho del formulario */
+            max-width: 500px; /* Ancho máximo del formulario */
+            margin-left: 25px;
+            padding-top: 50px;
+        }
+        
+        /* Estilo del contenedor del formulario */
+        fieldset {
+            border: none;
+            padding: 1px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Estilo de la leyenda */
+        legend {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-family: "Arimo", sans-serif;
+            font-size: 20px;
+            font-weight: 100;
+            color: $color-secundario-texto;
+            text-align: center;
+        }
+        
+        /* Estilo de las etiquetas */
+        label {
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        
+        /* Estilo de los inputs y textarea */
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        
+        /* Estilo del botón de enviar */
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #00F0FF;
+            color: #000000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #FF9212;
+        }
+        input[type="submit"]:active {
+            transform: scale(0.95); /* Escala el botón al 98% de su tamaño original */
+            box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */    }
+        
+        /* Estilo para resaltar campos requeridos */
+        input:required,
+        textarea:required {
+            border-color: #007bff;
+        }
+        
+        /* Estilo para el mensaje de validación */
+        input:invalid,
+        textarea:invalid {
+            border-color: #dc3545;
+        }
+        
+        /* Estilo para el mensaje de validación personalizado */
+        input:invalid + span,
+        textarea:invalid + span {
+            display: inline-block;
+            font-size: 0.8em;
+            color: #dc3545;
+            margin-top: 5px;
+        }
+        
+    }
+    
+    
+    }

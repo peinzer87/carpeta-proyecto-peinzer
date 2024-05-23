@@ -1,0 +1,281 @@
+@media(max-width: 768px) {  //*HEADER DEL HOME*//
+    .header-index{
+        width: 100%;
+        height: 700px;
+        padding: .625rem;
+        header{
+        .flexboxnav {
+            background-color: #1b202052;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;;
+    }
+    .flexboxnav a img{
+        margin-right: 16px;
+    }
+    .navbar{
+        position: relative;
+    }
+    .flexbox-ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 28px;
+        position: sticky;
+        top: 0;
+        padding: 20px;
+    }
+    
+    .flexbox-ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+        &:hover{
+            color: #00f0ff;
+            text-decoration: none;
+        }
+    }
+    }
+    .nombre-home h1{
+        color: #ffffffcb;
+        font-weight: lighter;
+        font-size: 70px;
+        padding: 10px;
+    }
+    .nombre-home h2 {
+        font-size: 32px;
+        font-weight: 200;
+        color: #00f0ff;
+        padding-left: .875rem;
+        margin-bottom: 110px;
+    }
+    /* boton CTA home */
+    section a{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding: 10px 34px;
+        font-size: 20px;
+        background:transparentize($color: #00000097, $amount: 0);
+        border: 1px solid #00ffe1; /* Border color */
+        border-radius: 44px; /* Round border edges */
+        cursor: pointer;
+        outline: none;
+        font-size: 20px;
+        color: #00ffe1;
+        text-decoration: none;
+        width: fit-content; /* Ancho del botón ajustado al contenido */
+        margin: 0 auto;
+    }
+    section a:hover {
+        background: #00ffe15d; /* Background color on hover */
+        color: #00000097(255, 255, 255, 0); /* Text color on hover */
+    }
+    section a:active {
+      transform: scale(0.97); /* Escala el botón al 98% de su tamaño original */
+      box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
+    }
+    }
+//**//FIN HEADER HOME
+
+.collapse.navbar-collapse {
+    position: absolute; /* Establece la posición del menú desplegable */
+    top: 100%; /* Alinea el menú desplegable justo debajo del navbar */
+    right: 0;
+    z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
+    background-color: #1b202052; /* Opcional: establece el color de fondo */
+    border: 1px solid #0000002d; /* Opcional: añade un borde */
+    border-radius: 5px;
+    backdrop-filter: blur 6.4px;
+    padding: 0.5rem 1rem; /* Opcional: añade espacio interno */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    }
+#logo{
+    width: 121px;
+    height: 41px;
+}
+    .headerPages {  //*ALTURA de las paginas secundarias*//
+        height: 250px;
+        }
+    .headerPages h1{ //*titulo de paginas secundarias*//
+        font-size: 60px;
+        margin-top: 120px;
+    }
+    .mainServices h2{   //*texto de las paginas de servicios *//
+        font-size: 16px;
+    }
+
+
+
+//*main pagina HOME*//
+.main-index{
+    background-color: #000c10;
+    width: 100%;
+    height: 1900px;
+    .main-section h3{
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        font-weight: lighter;
+        color:#00F0FF;
+        padding-top: 5rem;
+    }
+    .main-section h4{
+        font-family: "Arimo", sans-serif;
+        font-size: 20PX;
+        font-weight: 7;
+        color:white;
+        margin: 8.125rem;
+    }
+    .our-services h3{
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        font-weight: lighter;
+        color:#00F0FF;
+        margin: 80px;
+    }
+    #services-cards a img{
+        width: 250px;
+        height: 421px;
+        filter:none;
+    }
+    #services-cards a img:hover{
+        transform: scale(1.1);
+    }
+    #services-cards{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+
+
+//*main pagina de projectos (imagenes)  *//
+.main-project{
+    height: 450px;
+    background-color: #000c10;
+    .projects{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .projects a img{
+        width: 160px;
+        height: 160px;
+        margin-top: 100px;
+        filter:none;
+    }
+    .projects a img:hover{
+        filter:drop-shadow(0rem 0px 0 #88f7ff);
+        transform: scale(1.1);
+    }
+}
+
+
+/* MAIN pagina de contacto */
+.grid-contact{
+    width: 100%;
+    height: 1000px;
+    background-color: $color-fondo;
+    .datos-personales{
+        width: 600px;
+        font-family: "Arimo", sans-serif;
+        font-size: 15;
+        font-weight: 7;
+        color:white;
+    }
+    form {
+        width: 80%; /* Ancho del formulario */
+        max-width: 600px; /* Ancho máximo del formulario */
+        margin-left: 80px;
+        padding-top: 50px;
+    }
+    
+    /* Estilo del contenedor del formulario */
+    fieldset {
+        border: none;
+        padding: 1px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Estilo de la leyenda */
+    legend {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-family: "Arimo", sans-serif;
+        font-size: 28px;
+        font-weight: 100;
+        color: #ffffff;
+        text-align: center;
+    }
+    
+    /* Estilo de las etiquetas */
+    label {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+    }
+    
+    /* Estilo de los inputs y textarea */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+    
+    /* Estilo del botón de enviar */
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #00F0FF;
+        color: #000000;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.2em;
+        transition: background-color 0.3s ease;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #00bdcaa7;
+        color: rgb(0, 0, 0);
+        }
+    input[type="submit"]:active {
+        transform: scale(0.95); /* Escala el botón al 98% de su tamaño original */
+        box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */    }
+    
+    /* Estilo para resaltar campos requeridos */
+    input:required,
+    textarea:required {
+        border-color: #007bff;
+    }
+    
+    /* Estilo para el mensaje de validación */
+    input:invalid,
+    textarea:invalid {
+        border-color: #dc3545;
+    }
+    
+    /* Estilo para el mensaje de validación personalizado */
+    input:invalid + span,
+    textarea:invalid + span {
+        display: inline-block;
+        font-size: 0.8em;
+        color: #dc3545;
+        margin-top: 5px;
+    }
+    
+}
+
+
+}

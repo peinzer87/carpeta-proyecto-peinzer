@@ -1,0 +1,50 @@
+.main-index{
+    background-color: #000c10;
+    width: 100%;
+    height: 2000px;
+    .main-section h3{
+        display: flex;
+        justify-content: center;
+        font-size: 70px;
+        font-weight: lighter;
+        color: $color-principal-texto;
+        padding-top: 150px;
+    }
+    .main-section h4{
+        border: 1px solid #fafafa10; /* Border color */
+        backdrop-filter: blur 6.4px;
+        border-radius: 44px;
+        background:transparentize($color: #0000003a, $amount: 0);
+        font-family: "Arimo", sans-serif;
+        font-size: 1.5625rem;
+        font-weight: 7;
+        color:$color-secundario-texto;
+        margin: 8.125rem;
+        padding: 100px;
+    }
+    .our-services h3{
+        display: flex;
+        justify-content: center;
+        font-size: 70px;
+        font-weight: lighter;
+        color:$color-principal-texto;
+        margin: 80px;
+    }
+    #services-cards {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        a {
+            img {
+                border-radius: 5px;
+                width: 450px;
+                height: 621px;
+                filter: none;
+                transition: transform 0.5s ease-in-out; // Añade una transición suave
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

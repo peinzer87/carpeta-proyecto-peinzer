@@ -1,0 +1,22 @@
+.mainServices{
+        min-height: 100vh;
+        position: relative;
+    video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.4;
+    }
+    height: 37.5rem;
+    background-color: #000307;
+    h2{
+        font-family: "Arimo", sans-serif;
+        font-size: 24px;
+        font-weight: 7;
+        color:$color-secundario-texto;
+        padding: 6.25rem;
+    }
+}

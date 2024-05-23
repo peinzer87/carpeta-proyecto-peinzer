@@ -1,0 +1,21 @@
+.main-project{
+    height: 800px;
+    background-color: $color-fondo;
+    .projects{
+        display: flex;
+        justify-content: space-evenly;
+        a{
+            img{
+                width: 320px;
+                height: 320px;
+                margin-top: 100px;
+                filter:none;
+                &:hover{
+                    transition: transform 0.8s ease-in-out; // Añade una transición suave
+                    filter:drop-shadow(0rem 0px 0 #88f7ff);
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

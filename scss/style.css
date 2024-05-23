@@ -1,0 +1,274 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-index {
+  font-family: "Montserrat", sans-serif;
+  background-image: url("../assets/img/fondonegrorueda.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding: 0.625rem;
+}
+.header-index .flexboxnav {
+  background-color: rgba(27, 32, 32, 0.3215686275);
+  display: flex;
+  align-content: end;
+  justify-content: space-between;
+}
+.header-index .flexbox-nav {
+  background-color: rgba(27, 32, 32, 0.3215686275);
+  display: flex;
+  align-content: end;
+  justify-content: space-between;
+}
+.header-index .flexbox-ul {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+  font-size: 1.25rem;
+  position: sticky;
+  top: 0;
+}
+.header-index .flexbox-ul li a {
+  color: white;
+  text-decoration: none;
+}
+.header-index .flexbox-ul li a:hover {
+  color: #00f0ff;
+  text-decoration: none;
+}
+.header-index .nombre-home h1 {
+  color: #ffffff;
+  font-weight: lighter;
+  font-size: 150px;
+}
+.header-index .nombre-home {
+  padding-top: 9.375rem;
+}
+.header-index .nombre-home h2 {
+  font-size: 50px;
+  font-weight: 200;
+  color: #00F0FF;
+  padding-left: 0.875rem;
+  margin-bottom: 6.25rem;
+}
+.header-index section a {
+  margin-left: 10.625rem;
+  padding: 10px 20px;
+  font-size: 18px;
+  background: transparent;
+  border: 2px solid #FF9212; /* Border color */
+  border-radius: 20px; /* Round border edges */
+  cursor: pointer;
+  outline: none;
+  font-size: 1.875rem;
+  color: #FF9212;
+  text-decoration: none;
+}
+.header-index section a:hover {
+  background: #FF9212; /* Background color on hover */
+  color: rgb(65, 64, 64); /* Text color on hover */
+}
+
+.headerPages {
+  font-family: "Montserrat", sans-serif;
+  background-image: url("../assets/img/fondonegrorueda.jpg");
+  background-size: cover;
+  width: 100%;
+  padding: 0.625rem;
+  height: 350px;
+}
+.headerPages h1 {
+  color: #ffffff;
+  font-weight: lighter;
+  font-size: 150px;
+  margin-top: 100px;
+}
+.headerPages .flexboxnav {
+  background-color: rgba(27, 32, 32, 0.3215686275);
+  display: flex;
+  align-content: end;
+  justify-content: space-between;
+}
+.headerPages .flexbox-nav {
+  background-color: rgba(27, 32, 32, 0.3215686275);
+  display: flex;
+  align-content: end;
+  justify-content: space-between;
+}
+.headerPages .flexbox-ul {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+  font-size: 1.25rem;
+  position: sticky;
+  top: 0;
+}
+.headerPages .flexbox-ul li a {
+  color: white;
+  text-decoration: none;
+}
+.headerPages .flexbox-ul li a:hover {
+  color: #00f0ff;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #000909; /* Fondo oscuro teal */
+  color: #ffffff; /* Texto en blanco */
+  padding: 10px; /* Espaciado interno */
+  text-align: center; /* Texto centrado */
+  font-size: 20px;
+}
+
+.main-index {
+  background-color: #050606;
+  width: 100%;
+  height: 106.25rem;
+}
+.main-index .main-section h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  font-weight: bolder;
+  color: #00F0FF;
+  padding-top: 5rem;
+}
+.main-index .main-section h4 {
+  font-family: "Arimo", sans-serif;
+  font-size: 1.5625rem;
+  font-weight: 7;
+  color: white;
+  margin: 8.125rem;
+}
+.main-index .our-services h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  font-weight: bolder;
+  color: #00F0FF;
+  margin: 80px;
+}
+
+main {
+  width: 100%;
+  height: 1000px;
+  background-color: #050606;
+  /* Estilo del contenedor del formulario */
+  /* Estilo de la leyenda */
+  /* Estilo de las etiquetas */
+  /* Estilo de los inputs y textarea */
+  /* Estilo del botón de enviar */
+  /* Estilo para resaltar campos requeridos */
+  /* Estilo para el mensaje de validación */
+  /* Estilo para el mensaje de validación personalizado */
+}
+main .datos-personales {
+  width: 600px;
+  font-family: "Arimo", sans-serif;
+  font-size: 15;
+  font-weight: 7;
+  color: white;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 80%; /* Ancho del formulario */
+  max-width: 600px; /* Ancho máximo del formulario */
+  margin-left: 50px; /* Centrar el formulario en la página */
+  padding-top: 50px;
+}
+main fieldset {
+  border: none;
+  padding: 1px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+main legend {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Arimo", sans-serif;
+  font-size: 32px;
+  font-weight: 100;
+  color: #FF9212;
+  text-align: center;
+}
+main label {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+main input[type=text],
+main input[type=email],
+main textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+main input[type=submit] {
+  width: 100%;
+  padding: 10px;
+  background-color: #00F0FF;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+main input[type=submit]:hover {
+  background-color: #FF9212;
+}
+main input:required,
+main textarea:required {
+  border-color: #007bff;
+}
+main input:invalid,
+main textarea:invalid {
+  border-color: #dc3545;
+}
+main input:invalid + span,
+main textarea:invalid + span {
+  display: inline-block;
+  font-size: 0.8em;
+  color: #dc3545;
+  margin-top: 5px;
+}
+
+.mainServices {
+  height: 37.5rem;
+}
+.mainServices h2 {
+  font-family: "Arimo", sans-serif;
+  font-size: 24px;
+  font-weight: 7;
+  color: white;
+  padding: 6.25rem;
+}
+
+.main-project {
+  height: 800px;
+  background-image: linear-gradient(to left bottom, #000000, #000000, #000000, #000000, #000000, #1b1417, #2c212a, #3d303f, #565778, #5686b3, #35bae4, #00f0ff);
+}
+.main-project .projects {
+  display: flex;
+  justify-content: space-evenly;
+}
+.main-project .projects a img {
+  width: 320px;
+  height: 320px;
+  margin-top: 100px;
+  filter: none;
+}
+.main-project .projects a img:hover {
+  filter: drop-shadow(0rem 0px 0 #88f7ff);
+  transform: scale(1.1);
+}/*# sourceMappingURL=style.css.map */
