@@ -40,22 +40,21 @@
       color: #00F0FF;
       text-decoration: none; }
   .header-index .nombre-home h1 {
-    color: #ffffffcb;
-    font-size: 140px;
-    letter-spacing: 40px;
+    color: white;
+    font-size: 120px;
+    letter-spacing: 50px;
     font-weight: lighter;
-    margin-left: 30px;
     position: relative;
     z-index: 2; }
   .header-index .nombre-home {
-    padding-top: 200px;
-    padding-left: 30px; }
+    margin-left: 30px;
+    padding-top: 150px; }
   .header-index .nombre-home h2 {
     font-size: 50px;
     font-weight: 200;
     color: #00F0FF;
-    margin-bottom: 6.25rem;
     margin-left: 30px;
+    margin-bottom: 150px;
     position: relative;
     z-index: 2; }
   .header-index section a {
@@ -65,17 +64,18 @@
     align-items: center;
     gap: none;
     padding: 10px 34px;
-    font-size: 24px;
-    backdrop-filter: blur 6.4px;
-    background: rgba(0, 0, 0, 0.592157);
-    border: 1px solid #00ffe110;
+    background: #fff70012;
+    /* Background color on hover */
+    backdrop-filter: 0.5625rem;
+    border: 1px solid #ce8300;
     /* Border color */
     border-radius: 44px;
     /* Round border edges */
     cursor: pointer;
     outline: none;
-    font-size: 34px;
-    color: #00F0FF;
+    font-weight: lighter;
+    font-size: 28px;
+    color: #ce8300;
     text-decoration: none;
     width: fit-content;
     /* Ancho del botón ajustado al contenido */
@@ -83,9 +83,9 @@
     position: relative;
     z-index: 2; }
     .header-index section a:hover {
-      background: #00ffe15d;
+      background: #ce8300;
       /* Background color on hover */
-      color: #00000097 255, 255, 255, 0;
+      color: #000000;
       /* Text color on hover */ }
     .header-index section a:active {
       transform: scale(0.97);
@@ -105,10 +105,13 @@
  * 
  */ }
   .headerPages h1 {
-    color: #00F0FF;
+    background-image: linear-gradient(to top, #003134, #005155, #017379, #01969f, #01bcc7, #01bcc7, #01bcc7, #01969f, #017379, #005155, #003134);
     font-weight: lighter;
-    font-size: 130px;
-    margin-top: 148px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 180px;
+    margin-top: 15px;
     -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation: focus-in-expand-fwd 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
   .headerPages video {
@@ -134,9 +137,9 @@
   .headerPages .flexbox-ul li a {
     color: white;
     text-decoration: none; }
-  .headerPages .flexbox-ul li a:hover {
-    color: #00F0FF;
-    text-decoration: none; }
+    .headerPages .flexbox-ul li a:hover {
+      color: #00F0FF;
+      text-decoration: none; }
 
 @-webkit-keyframes focus-in-expand-fwd {
   0% {
@@ -178,34 +181,65 @@ footer {
   text-align: center;
   /* Texto centrado */
   font-size: 20px; }
+  footer #logo {
+    width: 121px;
+    height: 41px;
+    display: flex;
+    justify-content: center; }
 
 .main-index {
   background-color: #000c10;
   width: 100%;
-  height: 2000px; }
+  height: 2000px;
+  position: relative;
+  background-size: cover;
+  /*
+    .main-section{
+            background-image: url(../../assets/img/foto-fondo-azul-luz.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }*/ }
+  .main-index span {
+    letter-spacing: 10px;
+    font-weight: 400;
+    font-style: italic; }
   .main-index .main-section h3 {
     display: flex;
     justify-content: center;
     font-size: 70px;
+    letter-spacing: 10px;
     font-weight: lighter;
     color: #00F0FF;
     padding-top: 150px; }
   .main-index .main-section h4 {
-    border: 1px solid #fafafa10;
+    border: 1px solid #00eeff10;
     /* Border color */
     backdrop-filter: blur 6.4px;
     border-radius: 44px;
-    background: rgba(0, 0, 0, 0.227451);
+    background: rgba(1, 71, 88, 0.0666667);
     font-family: "Arimo", sans-serif;
     font-size: 1.5625rem;
     font-weight: 7;
     color: white;
     margin: 8.125rem;
-    padding: 100px; }
+    padding: 100px;
+    will-change: transform;
+    transition: transform 0.3s ease-in-out;
+    transform: perspective(900px) rotateX(0deg) rotateY(0deg) scale(1); }
+    .main-index .main-section h4:hover {
+      transform: perspective(1500px) rotateX(5deg) rotateY(15deg) scale(1.1); }
   .main-index .our-services h3 {
     display: flex;
     justify-content: center;
     font-size: 70px;
+    letter-spacing: 10px;
     font-weight: lighter;
     color: #00F0FF;
     margin: 80px; }
@@ -276,17 +310,17 @@ footer {
   .grid-contact input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #00F0FF;
-    color: #000000;
-    border: 1px solid #000c10;
+    background-color: #fff70012;
+    color: #ce8300;
+    border: 1px solid #ce8300;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.2em;
     transition: background-color 0.3s ease; }
   .grid-contact input[type="submit"]:hover {
-    border: 1px solid #fafafa10;
-    background-color: #00bdca10;
-    color: white; }
+    border: 1px solid;
+    background-color: #ce8300;
+    color: black; }
   .grid-contact input[type="submit"]:active {
     transform: scale(0.95);
     /* Escala el botón al 98% de su tamaño original */
@@ -308,8 +342,24 @@ footer {
 .mainServices {
   min-height: 100vh;
   position: relative;
-  height: 37.5rem;
-  background-color: #000307; }
+  overflow: hidden; }
+  .mainServices h2 {
+    position: relative;
+    z-index: 3;
+    font-family: "Arimo", sans-serif;
+    font-size: 24px;
+    font-weight: 7;
+    color: white;
+    padding: 6.25rem; }
+  .mainServices::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2; }
   .mainServices video {
     position: absolute;
     top: 0;
@@ -317,27 +367,42 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.4; }
-  .mainServices h2 {
-    font-family: "Arimo", sans-serif;
-    font-size: 24px;
-    font-weight: 7;
-    color: white;
-    padding: 6.25rem; }
+    z-index: 1; }
 
 .main-project {
   height: 800px;
-  background-color: #000c10; }
+  background-color: #000c10;
+  position: relative;
+  overflow: hidden; }
+  .main-project::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2; }
+  .main-project video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; }
   .main-project .projects {
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 3; }
     .main-project .projects a img {
       width: 320px;
       height: 320px;
       margin-top: 100px;
-      filter: none; }
+      filter: none;
+      transition: transform 0.8s ease-in-out; }
       .main-project .projects a img:hover {
-        transition: transform 0.8s ease-in-out;
         filter: drop-shadow(0rem 0px 0 #88f7ff);
         transform: scale(1.2); }
 
@@ -352,51 +417,55 @@ footer {
     align-items: center;
     justify-content: space-between; }
   .header-index .flexboxnav a img {
-    margin-right: 16px; }
+    margin-right: 1rem; }
   .header-index .flexbox-ul {
     list-style: none;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 80px;
+    gap: 5rem;
     position: sticky;
     top: 0; }
   .header-index .flexbox-ul li a {
     color: white;
     text-decoration: none;
-    font-size: 20px; }
-  .header-index .flexbox-ul li a:hover {
-    color: #00f0ff;
-    text-decoration: none; }
+    font-size: 1.5rem; }
+    .header-index .flexbox-ul li a:hover {
+      color: #00f0ff;
+      text-decoration: none; }
   .header-index .nombre-home {
-    padding-top: 100px;
-    padding-left: 30px; }
+    padding-top: 6.25rem;
+    padding-left: 1.875rem; }
   .header-index .nombre-home h1 {
     color: #ffffffcb;
     font-weight: lighter;
-    font-size: 90px; }
+    font-size: 5.625rem; }
   .header-index .nombre-home h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 200;
     color: #00f0ff;
     padding-left: .875rem;
-    margin-bottom: 90px; }
+    margin-bottom: 5.625rem; }
   .header-index section a {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    padding: 10px 34px;
-    font-size: 24px;
-    background: rgba(0, 0, 0, 0.592157);
-    border: 1px solid #00ffe1;
+    justify-content: none;
+    align-items: center;
+    gap: none;
+    padding: .625rem 2.125rem;
+    background: #fff70012;
+    /* Background color on hover */
+    backdrop-filter: 0.5625rem;
+    border: 0.0625rem solid #ce8300;
     /* Border color */
-    border-radius: 44px;
+    border-radius: 2.75rem;
     /* Round border edges */
     cursor: pointer;
     outline: none;
-    font-size: 24px;
-    color: #00ffe1;
+    font-weight: lighter;
+    font-size: 1.75rem;
+    color: #ce8300;
     text-decoration: none;
     width: fit-content;
     /* Ancho del botón ajustado al contenido */
@@ -404,9 +473,9 @@ footer {
     position: relative;
     z-index: 2; }
     .header-index section a:hover {
-      background: #00ffe15d;
+      background: #ce8300;
       /* Background color on hover */
-      color: #00000097 255, 255, 255, 0;
+      color: #000000;
       /* Text color on hover */ }
     .header-index section a:active {
       transform: scale(0.97);
@@ -414,39 +483,40 @@ footer {
       box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295);
       /* Reduce la sombra */ }
   .headerPages {
-    height: 250px; }
-  .headerPages h1 {
-    font-size: 80px;
-    margin-top: 100px; }
+    height: 15.625rem; }
+    .headerPages h1 {
+      font-size: 5rem;
+      margin-top: 6.25rem; }
   .mainServices h2 {
-    font-size: 20px; }
+    font-size: 1.25rem; }
   .main-index {
     background-color: #000c10;
     width: 100%;
-    height: 1450px; }
+    height: 100%; }
     .main-index .main-section h3 {
       display: flex;
       justify-content: center;
-      font-size: 50px;
+      font-size: 3.125rem;
       font-weight: lighter;
       color: #00F0FF;
       padding-top: 5rem; }
     .main-index .main-section h4 {
       font-family: "Arimo", sans-serif;
-      font-size: 20PX;
+      font-size: 1.25rem;
       font-weight: 7;
       color: white;
       margin: 8.125rem; }
     .main-index .our-services h3 {
       display: flex;
       justify-content: center;
-      font-size: 50px;
+      font-size: 3.125rem;
       font-weight: lighter;
       color: #00F0FF;
       margin: 80px; }
     .main-index #services-cards a img {
-      width: 330px;
-      height: 501px;
+      flex-wrap: wrap;
+      width: 20.625rem;
+      height: 31.3125rem;
       filter: none; }
     .main-index #services-cards a img:hover {
       transform: scale(1.1); }
@@ -455,15 +525,15 @@ footer {
       flex-direction: row;
       justify-content: space-evenly; }
   .main-project {
-    height: 600px;
+    height: 37.5rem;
     background-color: #000c10; }
     .main-project .projects {
       display: flex;
       justify-content: space-evenly; }
       .main-project .projects a img {
-        width: 220px;
-        height: 220px;
-        margin-top: 100px;
+        width: 13.75rem;
+        height: 13.75rem;
+        margin-top: 6.25rem;
         filter: none; }
         .main-project .projects a img:hover {
           filter: drop-shadow(0rem 0px 0 #88f7ff);
@@ -471,7 +541,7 @@ footer {
   /* MAIN pagina de contacto */
   .grid-contact {
     width: 100%;
-    height: 1000px;
+    height: 62.5rem;
     background-color: #000c10;
     /* Estilo del contenedor del formulario */
     /* Estilo de la leyenda */
@@ -482,29 +552,29 @@ footer {
     /* Estilo para el mensaje de validación */
     /* Estilo para el mensaje de validación personalizado */ }
     .grid-contact .datos-personales {
-      width: 600px;
+      width: 37.5rem;
       font-family: "Arimo", sans-serif;
-      font-size: 15;
+      font-size: .9375rem;
       font-weight: 7;
       color: white; }
     .grid-contact form {
       width: 80%;
       /* Ancho del formulario */
-      max-width: 600px;
+      max-width: 37.5rem;
       /* Ancho máximo del formulario */
-      margin-left: 200px;
-      padding-top: 50px; }
+      margin-left: 12.5rem;
+      padding-top: 3.125rem; }
     .grid-contact fieldset {
       border: none;
       padding: 1px;
-      border-radius: 10px;
+      border-radius: .625rem;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
     .grid-contact legend {
       font-size: 1.5em;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-bottom: 1.25rem;
       font-family: "Arimo", sans-serif;
-      font-size: 28px;
+      font-size: 1.75rem;
       font-weight: 100;
       color: white;
       text-align: center; }
@@ -552,21 +622,21 @@ footer {
 
 @media (max-width: 768px) {
   .header-index {
-    width: 100%;
-    height: 700px;
-    padding: .625rem;
     /* boton CTA home */ }
-    .header-index header .flexboxnav {
+    .header-index header {
+      width: 100%;
+      height: 700px; }
+    .header-index .flexboxnav {
       background-color: #1b202052;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between; }
-    .header-index header .flexboxnav a img {
+    .header-index .flexboxnav a img {
       margin-right: 16px; }
-    .header-index header .navbar {
+    .header-index .navbar {
       position: relative; }
-    .header-index header .flexbox-ul {
+    .header-index .flexbox-ul {
       list-style: none;
       display: flex;
       flex-direction: column;
@@ -576,69 +646,59 @@ footer {
       position: sticky;
       top: 0;
       padding: 20px; }
-    .header-index header .flexbox-ul li a {
+    .header-index .flexbox-ul li a {
       color: white;
       text-decoration: none;
-      font-size: 24px; }
-      .header-index header .flexbox-ul li a:hover {
+      font-size: 20px; }
+      .header-index .flexbox-ul li a:hover {
         color: #00f0ff;
         text-decoration: none; }
     .header-index .nombre-home h1 {
       color: #ffffffcb;
       font-weight: lighter;
-      font-size: 70px;
+      font-size: 60px;
       padding: 10px; }
     .header-index .nombre-home h2 {
       font-size: 32px;
       font-weight: 200;
       color: #00f0ff;
-      padding-left: .875rem;
-      margin-bottom: 110px; }
+      padding-left: 0.875rem;
+      margin-bottom: 190px; }
     .header-index section a {
       display: flex;
       flex-direction: column;
-      align-content: center;
+      align-items: center;
       padding: 10px 34px;
-      font-size: 20px;
-      background: rgba(0, 0, 0, 0.592157);
-      border: 1px solid #00ffe1;
-      /* Border color */
+      background: #fff70012;
+      backdrop-filter: blur(0.5625rem);
+      border: 1px solid #ce8300;
       border-radius: 44px;
-      /* Round border edges */
       cursor: pointer;
       outline: none;
-      font-size: 20px;
-      color: #00ffe1;
+      font-weight: lighter;
+      font-size: 28px;
+      color: #ce8300;
       text-decoration: none;
       width: fit-content;
-      /* Ancho del botón ajustado al contenido */
-      margin: 0 auto; }
-    .header-index section a:hover {
-      background: #00ffe15d;
-      /* Background color on hover */
-      color: #00000097 255, 255, 255, 0;
-      /* Text color on hover */ }
-    .header-index section a:active {
-      transform: scale(0.97);
-      /* Escala el botón al 98% de su tamaño original */
-      box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295);
-      /* Reduce la sombra */ }
+      margin: 0 auto;
+      position: relative;
+      z-index: 2; }
+      .header-index section a:hover {
+        background: #ce8300;
+        color: #000000; }
+      .header-index section a:active {
+        transform: scale(0.97);
+        box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); }
   .collapse.navbar-collapse {
     position: absolute;
-    /* Establece la posición del menú desplegable */
     top: 100%;
-    /* Alinea el menú desplegable justo debajo del navbar */
     right: 0;
     z-index: 1000;
-    /* Asegúrate de que el menú esté por encima de otros elementos */
     background-color: #1b202052;
-    /* Opcional: establece el color de fondo */
     border: 1px solid #0000002d;
-    /* Opcional: añade un borde */
     border-radius: 5px;
-    backdrop-filter: blur 6.4px;
+    backdrop-filter: blur(6.4px);
     padding: 0.5rem 1rem;
-    /* Opcional: añade espacio interno */
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); }
   #logo {
     width: 121px;
@@ -653,24 +713,25 @@ footer {
   .main-index {
     background-color: #000c10;
     width: 100%;
-    height: 1900px; }
+    height: 100%; }
     .main-index .main-section h3 {
       display: flex;
       justify-content: center;
-      font-size: 50px;
+      font-size: 40px;
       font-weight: lighter;
       color: #00F0FF;
       padding-top: 5rem; }
     .main-index .main-section h4 {
       font-family: "Arimo", sans-serif;
-      font-size: 20PX;
+      font-size: .75rem;
       font-weight: 7;
       color: white;
-      margin: 8.125rem; }
+      margin: 1.875rem;
+      padding: 1.5625rem; }
     .main-index .our-services h3 {
       display: flex;
       justify-content: center;
-      font-size: 50px;
+      font-size: 40px;
       font-weight: lighter;
       color: #00F0FF;
       margin: 80px; }
@@ -702,26 +763,16 @@ footer {
   .grid-contact {
     width: 100%;
     height: 1000px;
-    background-color: #000c10;
-    /* Estilo del contenedor del formulario */
-    /* Estilo de la leyenda */
-    /* Estilo de las etiquetas */
-    /* Estilo de los inputs y textarea */
-    /* Estilo del botón de enviar */
-    /* Estilo para resaltar campos requeridos */
-    /* Estilo para el mensaje de validación */
-    /* Estilo para el mensaje de validación personalizado */ }
+    background-color: #000c10; }
     .grid-contact .datos-personales {
       width: 600px;
       font-family: "Arimo", sans-serif;
-      font-size: 15;
+      font-size: 15px;
       font-weight: 7;
       color: white; }
     .grid-contact form {
       width: 80%;
-      /* Ancho del formulario */
       max-width: 600px;
-      /* Ancho máximo del formulario */
       margin-left: 80px;
       padding-top: 50px; }
     .grid-contact fieldset {
@@ -765,9 +816,7 @@ footer {
       color: black; }
     .grid-contact input[type="submit"]:active {
       transform: scale(0.95);
-      /* Escala el botón al 98% de su tamaño original */
-      box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295);
-      /* Reduce la sombra */ }
+      box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); }
     .grid-contact input:required,
     .grid-contact textarea:required {
       border-color: #007bff; }
@@ -822,19 +871,20 @@ footer {
       padding: 0.5rem 0.40rem;
       /* Opcional: añade espacio interno */
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); }
-    .header-index .nombre-home h1 {
-      color: #ffffffcb;
-      font-weight: lighter;
-      font-size: 38px;
-      letter-spacing: 25px;
-      margin-left: 5px;
-      margin-top: 30px; }
-    .header-index .nombre-home h2 {
-      font-size: 20px;
-      font-weight: 200;
-      color: #00F0FF;
-      margin-left: 5px;
-      margin-bottom: 150px; }
+    .header-index .nombre-home {
+      margin-left: 5px; }
+      .header-index .nombre-home h1 {
+        color: #ffffffcb;
+        font-weight: lighter;
+        font-size: 38px;
+        letter-spacing: 25px;
+        margin-top: 30px; }
+      .header-index .nombre-home h2 {
+        font-size: 20px;
+        font-weight: 200;
+        color: #00F0FF;
+        margin-left: 5px;
+        margin-bottom: 200px; }
     .header-index section a {
       display: flex;
       flex-direction: column;
@@ -842,16 +892,18 @@ footer {
       align-items: center;
       gap: none;
       padding: 10px 34px;
-      font-size: 16px;
-      background: rgba(0, 0, 0, 0.592157);
-      border: 1px solid #00ffe110;
+      background: #fff70012;
+      /* Background color on hover */
+      backdrop-filter: 0.5625rem;
+      border: 1px solid #ce8300;
       /* Border color */
       border-radius: 44px;
       /* Round border edges */
       cursor: pointer;
       outline: none;
-      font-size: 16px;
-      color: #00F0FF;
+      font-weight: lighter;
+      font-size: 24px;
+      color: #ce8300;
       text-decoration: none;
       width: fit-content;
       /* Ancho del botón ajustado al contenido */
@@ -859,9 +911,9 @@ footer {
       position: relative;
       z-index: 2; }
       .header-index section a:hover {
-        background: #00ffe15d;
+        background: #ce8300;
         /* Background color on hover */
-        color: #00000097 255, 255, 255, 0;
+        color: #000000;
         /* Text color on hover */ }
       .header-index section a:active {
         transform: scale(0.97);
@@ -873,16 +925,16 @@ footer {
     height: 41px; }
   .headerPages {
     height: 250px; }
-  .headerPages h1 {
-    font-size: 44px;
-    margin-top: 130px; }
+    .headerPages h1 {
+      font-size: 44px;
+      margin-top: 130px; }
   .mainServices h2 {
     font-size: 12px;
     padding: 30px; }
   .main-index {
     background-color: #000c10;
     width: 100%;
-    height: 900px; }
+    height: 100%; }
     .main-index .main-section h3 {
       display: flex;
       justify-content: center;
@@ -892,7 +944,7 @@ footer {
       padding-top: 5rem; }
     .main-index .main-section h4 {
       font-family: "Arimo", sans-serif;
-      font-size: 12PX;
+      font-size: .75rem;
       font-weight: 7;
       color: white;
       margin: 10px;
@@ -1057,7 +1109,7 @@ footer {
     .header-index .nombre-home h1 {
       color: #ffffffcb;
       font-weight: lighter;
-      letter-spacing: 30px;
+      letter-spacing: 20px;
       font-size: 24px;
       padding: 5px;
       margin-top: 15px; }
@@ -1066,21 +1118,26 @@ footer {
       font-weight: 200;
       color: #00f0ff;
       padding-left: 5px;
-      margin-bottom: 70px; }
+      margin-bottom: 150px; }
     .header-index section a {
       display: flex;
       flex-direction: column;
-      align-content: center;
+      justify-content: none;
+      align-items: center;
+      gap: none;
       padding: 10px 34px;
-      background: rgba(0, 0, 0, 0.592157);
-      border: 1px solid #00ffe110;
+      background: #fff70012;
+      /* Background color on hover */
+      backdrop-filter: 0.5625rem;
+      border: 1px solid #ce8300;
       /* Border color */
       border-radius: 44px;
       /* Round border edges */
       cursor: pointer;
       outline: none;
-      font-size: 12px;
-      color: #00F0FF;
+      font-weight: lighter;
+      font-size: 16px;
+      color: #ce8300;
       text-decoration: none;
       width: fit-content;
       /* Ancho del botón ajustado al contenido */
@@ -1088,9 +1145,9 @@ footer {
       position: relative;
       z-index: 2; }
       .header-index section a:hover {
-        background: #00ffe15d;
+        background: #ce8300;
         /* Background color on hover */
-        color: #00000097 255, 255, 255, 0;
+        color: #000000;
         /* Text color on hover */ }
       .header-index section a:active {
         transform: scale(0.97);
@@ -1111,7 +1168,7 @@ footer {
   .main-index {
     background-color: #000c10;
     width: 100%;
-    height: 1050px; }
+    height: 100%; }
     .main-index .main-section h3 {
       display: flex;
       justify-content: center;
@@ -1243,11 +1300,13 @@ footer {
 @media (max-width: 320px) {
   .header-index {
     font-family: "Montserrat", sans-serif;
-    background-image: url("../assets/img/fondonegrorueda.jpg");
     width: 100%;
     height: 500px;
     padding: .625rem;
     /* boton CTA home */ }
+    .header-index .headerPages {
+      width: 100%;
+      height: 500px; }
     .header-index .flexboxnav {
       background-color: #1b202052; }
     .header-index .flexboxnav a img {
@@ -1283,19 +1342,19 @@ footer {
       padding: 0.5rem 0.55rem;
       /* Opcional: añade espacio interno */
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); }
+    .header-index .nombre-home {
+      padding-left: 2px; }
     .header-index .nombre-home h1 {
       color: #ffffffcb;
       font-weight: lighter;
-      font-size: 24px;
+      font-size: 28px;
       letter-spacing: 20px;
-      padding: 3px;
       margin-top: 15px; }
     .header-index .nombre-home h2 {
-      font-size: 12px;
+      font-size: 16px;
       font-weight: 200;
       color: #00f0ff;
-      padding-left: 3px;
-      margin-bottom: 70px; }
+      margin-bottom: 120px; }
     .header-index section a {
       display: flex;
       flex-direction: column;
@@ -1303,23 +1362,28 @@ footer {
       align-items: center;
       gap: none;
       padding: 10px 34px;
-      background: rgba(0, 0, 0, 0.592157);
-      border: 1px solid #00ffe110;
+      background: #fff70012;
+      /* Background color on hover */
+      backdrop-filter: 0.5625rem;
+      border: 1px solid #ce8300;
       /* Border color */
       border-radius: 44px;
       /* Round border edges */
       cursor: pointer;
       outline: none;
-      font-size: 12px;
-      color: #00F0FF;
+      font-weight: lighter;
+      font-size: 16px;
+      color: #ce8300;
       text-decoration: none;
       width: fit-content;
       /* Ancho del botón ajustado al contenido */
-      margin: 0 auto; }
+      margin: 0 auto;
+      position: relative;
+      z-index: 2; }
       .header-index section a:hover {
-        background: #00ffe15d;
+        background: #ce8300;
         /* Background color on hover */
-        color: #00000097 255, 255, 255, 0;
+        color: #000000;
         /* Text color on hover */ }
       .header-index section a:active {
         transform: scale(0.97);
@@ -1340,7 +1404,7 @@ footer {
   .main-index {
     background-color: #000c10;
     width: 100%;
-    height: 900px; }
+    height: 100%; }
     .main-index .main-section h3 {
       display: flex;
       justify-content: center;

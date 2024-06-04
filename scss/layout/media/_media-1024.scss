@@ -12,7 +12,7 @@
             justify-content: space-between;;
     }
     .flexboxnav a img{
-        margin-right: 16px;
+        margin-right: 1rem;
     }
     
     .flexbox-ul {
@@ -21,78 +21,78 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        gap: 80px;
+        gap: 5rem;
         position: sticky;
         top: 0;
     }
-    
     .flexbox-ul li a {
         color: white;
         text-decoration: none;
-        font-size: 20px;
-    }
-    
-    .flexbox-ul li a:hover {
-        color: #00f0ff;
-        text-decoration: none;
+        font-size: 1.5rem;
+        &:hover{
+            color: #00f0ff;
+            text-decoration: none;
+        }
     }
     .nombre-home{
-        padding-top: 100px;
-        padding-left: 30px;
+        padding-top: 6.25rem;
+        padding-left: 1.875rem;
         }
     .nombre-home h1{
         color: #ffffffcb;
         font-weight: lighter;
-        font-size: 90px;
+        font-size: 5.625rem;
     }
     .nombre-home h2 {
-        font-size: 40px;
+        font-size: 2.5rem;
         font-weight: 200;
         color: #00f0ff;
         padding-left: .875rem;
-        margin-bottom: 90px;
+        margin-bottom: 5.625rem;
     }
     
     section a{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        padding: 10px 34px;
-        font-size: 24px;
-        background:transparentize($color: #00000097, $amount: 0);
-        border: 1px solid #00ffe1; /* Border color */
-        border-radius: 44px; /* Round border edges */
+        @include flex (column,none,center,none);
+        padding: .625rem 2.125rem;
+        background:  #fff70012; /* Background color on hover */
+        backdrop-filter: (.5625rem);
+        border: .0625rem solid $color-terciario; /* Border color */
+        border-radius: 2.75rem; /* Round border edges */
         cursor: pointer;
         outline: none;
-        font-size: 24px;
-        color: #00ffe1;
-        text-decoration: none;
-        width: fit-content; /* Ancho del botón ajustado al contenido */
-        margin: 0 auto;
-        position: relative;
-        z-index: 2;
-        &:hover{
-          background: #00ffe15d; /* Background color on hover */
-          color: #00000097(255, 255, 255, 0); /* Text color on hover */
-        }
-        &:active{
-          transform: scale(0.97); /* Escala el botón al 98% de su tamaño original */
-          box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
-        }
-    }
+        font-weight: lighter;
+          font-size: 1.75rem;
+          color: $color-terciario;
+          text-decoration: none;
+          width: fit-content; /* Ancho del botón ajustado al contenido */
+          margin: 0 auto;
+          position: relative;
+          z-index: 2;
+          &:hover{
+            background: $color-terciario; /* Background color on hover */
+            color: #000000; /* Text color on hover */
+          }
+          &:active{
+            transform: scale(0.97); /* Escala el botón al 98% de su tamaño original */
+            box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
+          }
+      }
     }
 //**//FIN HEADER HOME
 
 
     .headerPages {  //*ALTURA de las paginas secundarias*//
-        height: 250px;
+        height: 15.625rem;
+        h1{
+            font-size: 5rem;
+            margin-top: 6.25rem;
+        }
         }
     .headerPages h1{ //*titulo de paginas secundarias*//
-        font-size: 80px;
-        margin-top: 100px;
+
     }
     .mainServices h2{   //*texto de las paginas de servicios *//
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
 
@@ -100,18 +100,18 @@
 .main-index{
     background-color: $color-fondo;
     width: 100%;
-    height: 1450px;
+    height: 100%;
     .main-section h3{
         display: flex;
         justify-content: center;
-        font-size: 50px;
+        font-size: 3.125rem;
         font-weight: lighter;
         color:#00F0FF;
         padding-top: 5rem;
     }
     .main-section h4{
         font-family: "Arimo", sans-serif;
-        font-size: 20PX;
+        font-size: 1.25rem;
         font-weight: 7;
         color:white;
         margin: 8.125rem;
@@ -119,14 +119,15 @@
     .our-services h3{
         display: flex;
         justify-content: center;
-        font-size: 50px;
+        font-size: 3.125rem;
         font-weight: lighter;
         color:#00F0FF;
         margin: 80px;
     }
     #services-cards a img{
-        width: 330px;
-        height: 501px;
+        flex-wrap: wrap;
+        width: 20.625rem;
+        height: 31.3125rem;
         filter:none;
     }
     #services-cards a img:hover{
@@ -142,16 +143,16 @@
 
 //*main pagina de projectos (imagenes)  *//
 .main-project{
-    height: 600px;
+    height: 37.5rem;
     background-color: $color-fondo;
     .projects{
         display: flex;
         justify-content: space-evenly;
         a{
             img{
-                width: 220px;
-                height: 220px;
-                margin-top: 100px;
+                width: 13.75rem;
+                height: 13.75rem;
+                margin-top: 6.25rem;
                 filter:none;
                 &:hover{
                     filter:drop-shadow(0rem 0px 0 #88f7ff);
@@ -166,27 +167,27 @@
 /* MAIN pagina de contacto */
 .grid-contact{
     width: 100%;
-    height: 1000px;
+    height: 62.5rem;
     background-color: $color-fondo;
     .datos-personales{
-        width: 600px;
+        width: 37.5rem;
         font-family: "Arimo", sans-serif;
-        font-size: 15;
+        font-size: .9375rem;
         font-weight: 7;
         color:white;
     }
     form {
         width: 80%; /* Ancho del formulario */
-        max-width: 600px; /* Ancho máximo del formulario */
-        margin-left: 200px;
-        padding-top: 50px;
+        max-width: 37.5rem; /* Ancho máximo del formulario */
+        margin-left: 12.5rem;
+        padding-top: 3.125rem;
     }
     
     /* Estilo del contenedor del formulario */
     fieldset {
         border: none;
         padding: 1px;
-        border-radius: 10px;
+        border-radius: .625rem;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     }
     
@@ -194,9 +195,9 @@
     legend {
         font-size: 1.5em;
         font-weight: bold;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
         font-family: "Arimo", sans-serif;
-        font-size: 28px;
+        font-size: 1.75rem;
         font-weight: 100;
         color: $color-secundario-texto;
         text-align: center;
@@ -259,9 +260,6 @@
         font-size: 0.8em;
         color: #dc3545;
         margin-top: 5px;
-    }
-    
+    }   
 }
-
-
 }

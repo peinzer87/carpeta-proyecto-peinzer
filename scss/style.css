@@ -6,28 +6,35 @@
 }
 
 .header-index {
-  font-family: "Montserrat", sans-serif;
-  background-image: url("../assets/img/fondonegrorueda.jpg");
+  min-height: 100vh;
+  position: relative;
   background-size: cover;
   width: 100%;
   height: 100vh;
   padding: 0.625rem;
 }
-.header-index .flexboxnav {
-  background-color: rgba(27, 32, 32, 0.3215686275);
-  display: flex;
-  align-content: end;
-  justify-content: space-between;
+.header-index video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header-index #logo {
+  width: 121px;
+  height: 41px;
 }
 .header-index .flexbox-nav {
-  background-color: rgba(27, 32, 32, 0.3215686275);
-  display: flex;
-  align-content: end;
-  justify-content: space-between;
+  background-color: rgba(27, 32, 32, 0.1725490196);
 }
 .header-index .flexbox-ul {
   list-style: none;
   display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
   gap: 80px;
   font-size: 1.25rem;
   position: sticky;
@@ -38,67 +45,99 @@
   text-decoration: none;
 }
 .header-index .flexbox-ul li a:hover {
-  color: #00f0ff;
+  color: #fff235;
   text-decoration: none;
 }
 .header-index .nombre-home h1 {
-  color: #ffffff;
+  color: white;
+  font-size: 140px;
+  letter-spacing: 50px;
   font-weight: lighter;
-  font-size: 150px;
+  position: relative;
+  z-index: 2;
 }
 .header-index .nombre-home {
-  padding-top: 9.375rem;
+  margin-left: 30px;
+  padding-top: 200px;
 }
 .header-index .nombre-home h2 {
   font-size: 50px;
   font-weight: 200;
   color: #00F0FF;
-  padding-left: 0.875rem;
+  margin-left: 30px;
   margin-bottom: 6.25rem;
+  position: relative;
+  z-index: 2;
 }
 .header-index section a {
-  margin-left: 10.625rem;
-  padding: 10px 20px;
-  font-size: 18px;
-  background: transparent;
-  border: 2px solid #FF9212; /* Border color */
-  border-radius: 20px; /* Round border edges */
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+  padding: 10px 34px;
+  font-size: 24px;
+  background: rgba(255, 247, 0, 0.0705882353); /* Background color on hover */
+  -webkit-backdrop-filter: 0.5625rem;
+          backdrop-filter: 0.5625rem;
+  border: 1px solid #fff235; /* Border color */
+  border-radius: 44px; /* Round border edges */
   cursor: pointer;
   outline: none;
-  font-size: 1.875rem;
-  color: #FF9212;
+  font-weight: lighter;
+  font-size: 34px;
+  color: #fff235;
   text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content; /* Ancho del botón ajustado al contenido */
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 .header-index section a:hover {
-  background: #FF9212; /* Background color on hover */
-  color: rgb(65, 64, 64); /* Text color on hover */
+  background: #fff235; /* Background color on hover */
+  color: #000000; /* Text color on hover */
+}
+.header-index section a:active {
+  transform: scale(0.97); /* Escala el botón al 98% de su tamaño original */
+  box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
 }
 
 .headerPages {
   font-family: "Montserrat", sans-serif;
-  background-image: url("../assets/img/fondonegrorueda.jpg");
+  position: relative;
+  background-color: #000c10;
   background-size: cover;
   width: 100%;
   padding: 0.625rem;
   height: 350px;
+  /* -
+  * 
+  */
 }
 .headerPages h1 {
-  color: #ffffff;
+  color: #00F0FF;
   font-weight: lighter;
-  font-size: 150px;
-  margin-top: 100px;
+  font-size: 130px;
+  margin-top: 148px;
+  animation: focus-in-expand-fwd 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-.headerPages .flexboxnav {
-  background-color: rgba(27, 32, 32, 0.3215686275);
-  display: flex;
-  align-content: end;
-  justify-content: space-between;
+.headerPages video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: opacity(0.5);
+}
+.headerPages #logo {
+  width: 121px;
+  height: 41px;
 }
 .headerPages .flexbox-nav {
   background-color: rgba(27, 32, 32, 0.3215686275);
-  display: flex;
-  align-content: end;
-  justify-content: space-between;
 }
 .headerPages .flexbox-ul {
   list-style: none;
@@ -113,51 +152,113 @@
   text-decoration: none;
 }
 .headerPages .flexbox-ul li a:hover {
-  color: #00f0ff;
+  color: #fff235;
   text-decoration: none;
+}
+@keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-800px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    filter: blur(0);
+    opacity: 1;
+  }
 }
 
 footer {
-  background-color: #000909; /* Fondo oscuro teal */
+  background-color: #000c10; /* Fondo oscuro teal */
   color: #ffffff; /* Texto en blanco */
   padding: 10px; /* Espaciado interno */
   text-align: center; /* Texto centrado */
   font-size: 20px;
 }
+footer #logo {
+  width: 121px;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+}
 
 .main-index {
-  background-color: #050606;
+  background-color: #000c10;
   width: 100%;
-  height: 106.25rem;
+  height: 2000px;
+  position: relative;
+  background-size: cover;
+  /*
+  .main-section{
+          background-image: url(../../assets/img/foto-fondo-azul-luz.jpg);
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: fill;
+      }*/
+}
+.main-index span {
+  letter-spacing: 10px;
+  font-weight: 400;
+  font-style: italic;
 }
 .main-index .main-section h3 {
   display: flex;
   justify-content: center;
   font-size: 70px;
-  font-weight: bolder;
+  letter-spacing: 10px;
+  font-weight: lighter;
   color: #00F0FF;
-  padding-top: 5rem;
+  padding-top: 150px;
 }
 .main-index .main-section h4 {
+  border: 1px solid rgba(0, 238, 255, 0.062745098); /* Border color */
+  -webkit-backdrop-filter: blur 6.4px;
+          backdrop-filter: blur 6.4px;
+  border-radius: 44px;
+  background: rgba(1, 71, 88, 0.0666666667);
   font-family: "Arimo", sans-serif;
   font-size: 1.5625rem;
   font-weight: 7;
   color: white;
   margin: 8.125rem;
+  padding: 100px;
 }
 .main-index .our-services h3 {
   display: flex;
   justify-content: center;
   font-size: 70px;
-  font-weight: bolder;
+  letter-spacing: 10px;
+  font-weight: lighter;
   color: #00F0FF;
   margin: 80px;
 }
+.main-index #services-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.main-index #services-cards a img {
+  border-radius: 5px;
+  width: 450px;
+  height: 621px;
+  filter: none;
+  transition: transform 0.5s ease-in-out;
+}
+.main-index #services-cards a img:hover {
+  transform: scale(1.1);
+}
 
-main {
+.grid-contact {
   width: 100%;
   height: 1000px;
-  background-color: #050606;
+  background-color: #000c10;
   /* Estilo del contenedor del formulario */
   /* Estilo de la leyenda */
   /* Estilo de las etiquetas */
@@ -167,45 +268,42 @@ main {
   /* Estilo para el mensaje de validación */
   /* Estilo para el mensaje de validación personalizado */
 }
-main .datos-personales {
+.grid-contact .datos-personales {
   width: 600px;
   font-family: "Arimo", sans-serif;
   font-size: 15;
   font-weight: 7;
   color: white;
 }
-main form {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+.grid-contact form {
   width: 80%; /* Ancho del formulario */
   max-width: 600px; /* Ancho máximo del formulario */
-  margin-left: 50px; /* Centrar el formulario en la página */
+  margin-left: 450px;
   padding-top: 50px;
 }
-main fieldset {
+.grid-contact fieldset {
   border: none;
   padding: 1px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-main legend {
+.grid-contact legend {
   font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 20px;
   font-family: "Arimo", sans-serif;
   font-size: 32px;
   font-weight: 100;
-  color: #FF9212;
+  color: white;
   text-align: center;
 }
-main label {
+.grid-contact label {
   font-size: 1.2em;
   margin-bottom: 5px;
 }
-main input[type=text],
-main input[type=email],
-main textarea {
+.grid-contact input[type=text],
+.grid-contact input[type=email],
+.grid-contact textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -213,30 +311,36 @@ main textarea {
   border-radius: 5px;
   font-size: 1em;
 }
-main input[type=submit] {
+.grid-contact input[type=submit] {
   width: 100%;
   padding: 10px;
   background-color: #00F0FF;
   color: #000000;
-  border: none;
+  border: 1px solid #000c10;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1.2em;
   transition: background-color 0.3s ease;
 }
-main input[type=submit]:hover {
-  background-color: #FF9212;
+.grid-contact input[type=submit]:hover {
+  border: 1px solid rgba(250, 250, 250, 0.062745098);
+  background-color: rgba(0, 189, 202, 0.062745098);
+  color: rgb(255, 255, 255);
 }
-main input:required,
-main textarea:required {
+.grid-contact input[type=submit]:active {
+  transform: scale(0.95); /* Escala el botón al 98% de su tamaño original */
+  box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
+}
+.grid-contact input:required,
+.grid-contact textarea:required {
   border-color: #007bff;
 }
-main input:invalid,
-main textarea:invalid {
+.grid-contact input:invalid,
+.grid-contact textarea:invalid {
   border-color: #dc3545;
 }
-main input:invalid + span,
-main textarea:invalid + span {
+.grid-contact input:invalid + span,
+.grid-contact textarea:invalid + span {
   display: inline-block;
   font-size: 0.8em;
   color: #dc3545;
@@ -244,7 +348,20 @@ main textarea:invalid + span {
 }
 
 .mainServices {
+  min-height: 100vh;
+  position: relative;
   height: 37.5rem;
+  background-color: #000307;
+}
+.mainServices video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.4;
 }
 .mainServices h2 {
   font-family: "Arimo", sans-serif;
@@ -256,7 +373,7 @@ main textarea:invalid + span {
 
 .main-project {
   height: 800px;
-  background-image: linear-gradient(to left bottom, #000000, #000000, #000000, #000000, #000000, #1b1417, #2c212a, #3d303f, #565778, #5686b3, #35bae4, #00f0ff);
+  background-color: #000c10;
 }
 .main-project .projects {
   display: flex;
@@ -269,6 +386,1264 @@ main textarea:invalid + span {
   filter: none;
 }
 .main-project .projects a img:hover {
+  transition: transform 0.8s ease-in-out;
   filter: drop-shadow(0rem 0px 0 #88f7ff);
-  transform: scale(1.1);
+  transform: scale(1.2);
+}
+
+@media (max-width: 1024px) {
+  .header-index header {
+    width: 100%;
+    height: 100vh;
+  }
+  .header-index .flexboxnav {
+    background-color: rgba(27, 32, 32, 0.3215686275);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-index .flexboxnav a img {
+    margin-right: 16px;
+  }
+  .header-index .flexbox-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    position: sticky;
+    top: 0;
+  }
+  .header-index .flexbox-ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .header-index .flexbox-ul li a:hover {
+    color: #00f0ff;
+    text-decoration: none;
+  }
+  .header-index .nombre-home {
+    padding-top: 100px;
+    padding-left: 30px;
+  }
+  .header-index .nombre-home h1 {
+    color: rgba(255, 255, 255, 0.7960784314);
+    font-weight: lighter;
+    font-size: 90px;
+  }
+  .header-index .nombre-home h2 {
+    font-size: 40px;
+    font-weight: 200;
+    color: #00f0ff;
+    padding-left: 0.875rem;
+    margin-bottom: 90px;
+  }
+  .header-index section a {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 10px 34px;
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5921568627);
+    border: 1px solid #00ffe1; /* Border color */
+    border-radius: 44px; /* Round border edges */
+    cursor: pointer;
+    outline: none;
+    font-size: 24px;
+    color: #00ffe1;
+    text-decoration: none;
+    width: -moz-fit-content;
+    width: fit-content; /* Ancho del botón ajustado al contenido */
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  .header-index section a:hover {
+    background: rgba(0, 255, 225, 0.3647058824); /* Background color on hover */
+    color: rgba(0, 0, 0, 0.5921568627) 255, 255, 255, 0; /* Text color on hover */
+  }
+  .header-index section a:active {
+    transform: scale(0.97); /* Escala el botón al 98% de su tamaño original */
+    box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
+  }
+  .headerPages {
+    height: 250px;
+  }
+  .headerPages h1 {
+    font-size: 80px;
+    margin-top: 100px;
+  }
+  .mainServices h2 {
+    font-size: 20px;
+  }
+  .main-index {
+    background-color: #000c10;
+    width: 100%;
+    height: 1450px;
+  }
+  .main-index .main-section h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: lighter;
+    color: #00F0FF;
+    padding-top: 5rem;
+  }
+  .main-index .main-section h4 {
+    font-family: "Arimo", sans-serif;
+    font-size: 20PX;
+    font-weight: 7;
+    color: white;
+    margin: 8.125rem;
+  }
+  .main-index .our-services h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: lighter;
+    color: #00F0FF;
+    margin: 80px;
+  }
+  .main-index #services-cards a img {
+    width: 330px;
+    height: 501px;
+    filter: none;
+  }
+  .main-index #services-cards a img:hover {
+    transform: scale(1.1);
+  }
+  .main-index #services-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .main-project {
+    height: 600px;
+    background-color: #000c10;
+  }
+  .main-project .projects {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .main-project .projects a img {
+    width: 220px;
+    height: 220px;
+    margin-top: 100px;
+    filter: none;
+  }
+  .main-project .projects a img:hover {
+    filter: drop-shadow(0rem 0px 0 #88f7ff);
+    transform: scale(1.1);
+  }
+  /* MAIN pagina de contacto */
+  .grid-contact {
+    width: 100%;
+    height: 1000px;
+    background-color: #000c10;
+    /* Estilo del contenedor del formulario */
+    /* Estilo de la leyenda */
+    /* Estilo de las etiquetas */
+    /* Estilo de los inputs y textarea */
+    /* Estilo del botón de enviar */
+    /* Estilo para resaltar campos requeridos */
+    /* Estilo para el mensaje de validación */
+    /* Estilo para el mensaje de validación personalizado */
+  }
+  .grid-contact .datos-personales {
+    width: 600px;
+    font-family: "Arimo", sans-serif;
+    font-size: 15;
+    font-weight: 7;
+    color: white;
+  }
+  .grid-contact form {
+    width: 80%; /* Ancho del formulario */
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin-left: 200px;
+    padding-top: 50px;
+  }
+  .grid-contact fieldset {
+    border: none;
+    padding: 1px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .grid-contact legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Arimo", sans-serif;
+    font-size: 28px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+  }
+  .grid-contact label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  .grid-contact input[type=text],
+  .grid-contact input[type=email],
+  .grid-contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  .grid-contact input[type=submit] {
+    width: 100%;
+    padding: 10px;
+    background-color: #00F0FF;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+  }
+  .grid-contact input[type=submit]:hover {
+    background-color: #FF9212;
+  }
+  .grid-contact input[type=submit]:active {
+    transform: scale(0.95); /* Escala el botón al 98% de su tamaño original */
+    box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
+  }
+  .grid-contact input:required,
+  .grid-contact textarea:required {
+    border-color: #007bff;
+  }
+  .grid-contact input:invalid,
+  .grid-contact textarea:invalid {
+    border-color: #dc3545;
+  }
+  .grid-contact input:invalid + span,
+  .grid-contact textarea:invalid + span {
+    display: inline-block;
+    font-size: 0.8em;
+    color: #dc3545;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .header-index {
+    width: 100%;
+    height: 700px;
+    padding: 0.625rem;
+    /* boton CTA home */
+  }
+  .header-index header .flexboxnav {
+    background-color: rgba(27, 32, 32, 0.3215686275);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-index header .flexboxnav a img {
+    margin-right: 16px;
+  }
+  .header-index header .navbar {
+    position: relative;
+  }
+  .header-index header .flexbox-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+  }
+  .header-index header .flexbox-ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  .header-index header .flexbox-ul li a:hover {
+    color: #00f0ff;
+    text-decoration: none;
+  }
+  .header-index .nombre-home h1 {
+    color: rgba(255, 255, 255, 0.7960784314);
+    font-weight: lighter;
+    font-size: 70px;
+    padding: 10px;
+  }
+  .header-index .nombre-home h2 {
+    font-size: 32px;
+    font-weight: 200;
+    color: #00f0ff;
+    padding-left: 0.875rem;
+    margin-bottom: 110px;
+  }
+  .header-index section a {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 10px 34px;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.5921568627);
+    border: 1px solid #00ffe1; /* Border color */
+    border-radius: 44px; /* Round border edges */
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    color: #00ffe1;
+    text-decoration: none;
+    width: -moz-fit-content;
+    width: fit-content; /* Ancho del botón ajustado al contenido */
+    margin: 0 auto;
+  }
+  .header-index section a:hover {
+    background: rgba(0, 255, 225, 0.3647058824); /* Background color on hover */
+    color: rgba(0, 0, 0, 0.5921568627) 255, 255, 255, 0; /* Text color on hover */
+  }
+  .header-index section a:active {
+    transform: scale(0.97); /* Escala el botón al 98% de su tamaño original */
+    box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
+  }
+  .collapse.navbar-collapse {
+    position: absolute; /* Establece la posición del menú desplegable */
+    top: 100%; /* Alinea el menú desplegable justo debajo del navbar */
+    right: 0;
+    z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
+    background-color: rgba(27, 32, 32, 0.3215686275); /* Opcional: establece el color de fondo */
+    border: 1px solid rgba(0, 0, 0, 0.1764705882); /* Opcional: añade un borde */
+    border-radius: 5px;
+    -webkit-backdrop-filter: blur 6.4px;
+            backdrop-filter: blur 6.4px;
+    padding: 0.5rem 1rem; /* Opcional: añade espacio interno */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  #logo {
+    width: 121px;
+    height: 41px;
+  }
+  .headerPages {
+    height: 250px;
+  }
+  .headerPages h1 {
+    font-size: 60px;
+    margin-top: 120px;
+  }
+  .mainServices h2 {
+    font-size: 16px;
+  }
+  .main-index {
+    background-color: #000c10;
+    width: 100%;
+    height: 1900px;
+  }
+  .main-index .main-section h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: lighter;
+    color: #00F0FF;
+    padding-top: 5rem;
+  }
+  .main-index .main-section h4 {
+    font-family: "Arimo", sans-serif;
+    font-size: 20PX;
+    font-weight: 7;
+    color: white;
+    margin: 8.125rem;
+  }
+  .main-index .our-services h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: lighter;
+    color: #00F0FF;
+    margin: 80px;
+  }
+  .main-index #services-cards a img {
+    width: 250px;
+    height: 421px;
+    filter: none;
+  }
+  .main-index #services-cards a img:hover {
+    transform: scale(1.1);
+  }
+  .main-index #services-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .main-project {
+    height: 450px;
+    background-color: #000c10;
+  }
+  .main-project .projects {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .main-project .projects a img {
+    width: 160px;
+    height: 160px;
+    margin-top: 100px;
+    filter: none;
+  }
+  .main-project .projects a img:hover {
+    filter: drop-shadow(0rem 0px 0 #88f7ff);
+    transform: scale(1.1);
+  }
+  /* MAIN pagina de contacto */
+  .grid-contact {
+    width: 100%;
+    height: 1000px;
+    background-color: #000c10;
+    /* Estilo del contenedor del formulario */
+    /* Estilo de la leyenda */
+    /* Estilo de las etiquetas */
+    /* Estilo de los inputs y textarea */
+    /* Estilo del botón de enviar */
+    /* Estilo para resaltar campos requeridos */
+    /* Estilo para el mensaje de validación */
+    /* Estilo para el mensaje de validación personalizado */
+  }
+  .grid-contact .datos-personales {
+    width: 600px;
+    font-family: "Arimo", sans-serif;
+    font-size: 15;
+    font-weight: 7;
+    color: white;
+  }
+  .grid-contact form {
+    width: 80%; /* Ancho del formulario */
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin-left: 80px;
+    padding-top: 50px;
+  }
+  .grid-contact fieldset {
+    border: none;
+    padding: 1px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .grid-contact legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Arimo", sans-serif;
+    font-size: 28px;
+    font-weight: 100;
+    color: #ffffff;
+    text-align: center;
+  }
+  .grid-contact label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  .grid-contact input[type=text],
+  .grid-contact input[type=email],
+  .grid-contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  .grid-contact input[type=submit] {
+    width: 100%;
+    padding: 10px;
+    background-color: #00F0FF;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+  }
+  .grid-contact input[type=submit]:hover {
+    background-color: rgba(0, 189, 202, 0.6549019608);
+    color: rgb(0, 0, 0);
+  }
+  .grid-contact input[type=submit]:active {
+    transform: scale(0.95); /* Escala el botón al 98% de su tamaño original */
+    box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
+  }
+  .grid-contact input:required,
+  .grid-contact textarea:required {
+    border-color: #007bff;
+  }
+  .grid-contact input:invalid,
+  .grid-contact textarea:invalid {
+    border-color: #dc3545;
+  }
+  .grid-contact input:invalid + span,
+  .grid-contact textarea:invalid + span {
+    display: inline-block;
+    font-size: 0.8em;
+    color: #dc3545;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 428px) {
+  .header-index {
+    width: 100%;
+    height: 500px;
+    padding: 0.625rem;
+    /* boton CTA home */
+  }
+  .header-index .flexboxnav {
+    background-color: rgba(27, 32, 32, 0.3215686275);
+  }
+  .header-index .flexboxnav a img {
+    margin-right: 16px;
+  }
+  .header-index .flexbox-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+  }
+  .header-index .flexbox-ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .header-index .flexbox-ul li a:hover {
+    color: #00f0ff;
+    text-decoration: none;
+  }
+  .header-index .collapse.navbar-collapse {
+    position: absolute; /* Establece la posición del menú desplegable */
+    top: 100%; /* Alinea el menú desplegable justo debajo del navbar */
+    right: 0;
+    z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
+    background-color: rgba(27, 32, 32, 0.3215686275); /* Opcional: establece el color de fondo */
+    border: 1px solid #070707; /* Opcional: añade un borde */
+    padding: 0.5rem 0.4rem; /* Opcional: añade espacio interno */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .header-index .nombre-home h1 {
+    color: rgba(255, 255, 255, 0.7960784314);
+    font-weight: lighter;
+    font-size: 38px;
+    letter-spacing: 25px;
+    margin-left: 5px;
+    margin-top: 30px;
+  }
+  .header-index .nombre-home h2 {
+    font-size: 20px;
+    font-weight: 200;
+    color: #00F0FF;
+    margin-left: 5px;
+    margin-bottom: 150px;
+  }
+  .header-index section a {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    gap: none;
+    padding: 10px 34px;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.5921568627);
+    border: 1px solid rgba(0, 255, 225, 0.062745098); /* Border color */
+    border-radius: 44px; /* Round border edges */
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    color: #00F0FF;
+    text-decoration: none;
+    width: -moz-fit-content;
+    width: fit-content; /* Ancho del botón ajustado al contenido */
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  .header-index section a:hover {
+    background: rgba(0, 255, 225, 0.3647058824); /* Background color on hover */
+    color: rgba(0, 0, 0, 0.5921568627) 255, 255, 255, 0; /* Text color on hover */
+  }
+  .header-index section a:active {
+    transform: scale(0.97); /* Escala el botón al 98% de su tamaño original */
+    box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
+  }
+  #logo {
+    width: 121px;
+    height: 41px;
+  }
+  .headerPages {
+    height: 250px;
+  }
+  .headerPages h1 {
+    font-size: 44px;
+    margin-top: 130px;
+  }
+  .mainServices h2 {
+    font-size: 12px;
+    padding: 30px;
+  }
+  .main-index {
+    background-color: #000c10;
+    width: 100%;
+    height: 900px;
+  }
+  .main-index .main-section h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #00F0FF;
+    padding-top: 5rem;
+  }
+  .main-index .main-section h4 {
+    font-family: "Arimo", sans-serif;
+    font-size: 12PX;
+    font-weight: 7;
+    color: white;
+    margin: 10px;
+    padding: 40px;
+  }
+  .main-index .our-services h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #00F0FF;
+    margin: 80px;
+  }
+  .main-index #services-cards a img {
+    width: 135px;
+    height: 221px;
+    filter: none;
+  }
+  .main-index #services-cards a img:hover {
+    transform: scale(1.1);
+  }
+  .main-index #services-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .main-project {
+    height: 1700px;
+    background-image: linear-gradient(to left bottom, #000000, #000000, #000000, #000000, #000000, #1b1417, #2c212a, #3d303f, #565778, #5686b3, #35bae4, #00f0ff);
+  }
+  .main-project .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-project .projects a img {
+    width: 290px;
+    height: 290px;
+    margin-top: 100px;
+    gap: 1px;
+    filter: none;
+  }
+  .main-project .projects a img:hover {
+    filter: drop-shadow(0rem 0px 0 #88f7ff);
+    transform: scale(1.1);
+  }
+  /* MAIN pagina de contacto */
+  .grid-contact {
+    width: 100%;
+    height: 1000px;
+    background-color: #000c10;
+    /* Estilo del contenedor del formulario */
+    /* Estilo de la leyenda */
+    /* Estilo de las etiquetas */
+    /* Estilo de los inputs y textarea */
+    /* Estilo del botón de enviar */
+    /* Estilo para resaltar campos requeridos */
+    /* Estilo para el mensaje de validación */
+    /* Estilo para el mensaje de validación personalizado */
+  }
+  .grid-contact .datos-personales {
+    width: 300px;
+    font-family: "Arimo", sans-serif;
+    font-size: 15;
+    font-weight: 7;
+    color: white;
+  }
+  .grid-contact form {
+    width: 80%; /* Ancho del formulario */
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin-left: 60px;
+    padding-top: 50px;
+  }
+  .grid-contact fieldset {
+    border: none;
+    padding: 1px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .grid-contact legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Arimo", sans-serif;
+    font-size: 28px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+  }
+  .grid-contact label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  .grid-contact input[type=text],
+  .grid-contact input[type=email],
+  .grid-contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  .grid-contact input[type=submit] {
+    width: 100%;
+    padding: 10px;
+    background-color: #00F0FF;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+  }
+  .grid-contact input[type=submit]:hover {
+    background-color: #FF9212;
+  }
+  .grid-contact input[type=submit]:active {
+    transform: scale(0.95); /* Escala el botón al 98% de su tamaño original */
+    box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
+  }
+  .grid-contact input:required,
+  .grid-contact textarea:required {
+    border-color: #007bff;
+  }
+  .grid-contact input:invalid,
+  .grid-contact textarea:invalid {
+    border-color: #dc3545;
+  }
+  .grid-contact input:invalid + span,
+  .grid-contact textarea:invalid + span {
+    display: inline-block;
+    font-size: 0.8em;
+    color: #dc3545;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 376px) {
+  .header-index {
+    font-family: "Montserrat", sans-serif;
+    background-image: url("../assets/img/fondonegrorueda.jpg");
+    width: 100%;
+    height: 500px;
+    padding: 0.625rem;
+    /* boton CTA home */
+  }
+  .header-index .flexboxnav {
+    background-color: rgba(27, 32, 32, 0.3215686275);
+  }
+  .header-index .flexboxnav a img {
+    margin-right: 16px;
+  }
+  .header-index .flexbox-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+  }
+  .header-index .flexbox-ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .header-index .flexbox-ul li a:hover {
+    color: #00f0ff;
+    text-decoration: none;
+  }
+  .header-index .collapse.navbar-collapse {
+    position: absolute; /* Establece la posición del menú desplegable */
+    top: 100%; /* Alinea el menú desplegable justo debajo del navbar */
+    right: 0;
+    z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
+    background-color: rgba(27, 32, 32, 0.3215686275); /* Opcional: establece el color de fondo */
+    border: 1px solid #070707; /* Opcional: añade un borde */
+    padding: 0.5rem 0.55rem; /* Opcional: añade espacio interno */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .header-index .nombre-home h1 {
+    color: rgba(255, 255, 255, 0.7960784314);
+    font-weight: lighter;
+    letter-spacing: 30px;
+    font-size: 24px;
+    padding: 5px;
+    margin-top: 15px;
+  }
+  .header-index .nombre-home h2 {
+    font-size: 14px;
+    font-weight: 200;
+    color: #00f0ff;
+    padding-left: 5px;
+    margin-bottom: 70px;
+  }
+  .header-index section a {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 10px 34px;
+    background: rgba(0, 0, 0, 0.5921568627);
+    border: 1px solid rgba(0, 255, 225, 0.062745098); /* Border color */
+    border-radius: 44px; /* Round border edges */
+    cursor: pointer;
+    outline: none;
+    font-size: 12px;
+    color: #00F0FF;
+    text-decoration: none;
+    width: -moz-fit-content;
+    width: fit-content; /* Ancho del botón ajustado al contenido */
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  .header-index section a:hover {
+    background: rgba(0, 255, 225, 0.3647058824); /* Background color on hover */
+    color: rgba(0, 0, 0, 0.5921568627) 255, 255, 255, 0; /* Text color on hover */
+  }
+  .header-index section a:active {
+    transform: scale(0.97); /* Escala el botón al 98% de su tamaño original */
+    box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
+  }
+  #logo {
+    width: 121px;
+    height: 41px;
+  }
+  .headerPages {
+    height: 250px;
+  }
+  .headerPages h1 {
+    font-size: 44px;
+    margin-top: 130px;
+  }
+  .mainServices h2 {
+    font-size: 12px;
+    padding: 30px;
+  }
+  .main-index {
+    background-color: #000c10;
+    width: 100%;
+    height: 1050px;
+  }
+  .main-index .main-section h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: lighter;
+    color: #00F0FF;
+    padding-top: 5rem;
+  }
+  .main-index .main-section h4 {
+    font-family: "Arimo", sans-serif;
+    font-size: 12PX;
+    font-weight: 7;
+    color: white;
+    margin: 50px;
+  }
+  .main-index .our-services h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: lighter;
+    color: #00F0FF;
+    margin: 80px;
+  }
+  .main-index #services-cards a img {
+    width: 110px;
+    height: 211px;
+    filter: none;
+  }
+  .main-index #services-cards a img:hover {
+    transform: scale(1.1);
+  }
+  .main-index #services-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .main-project {
+    height: 1700px;
+    background-color: #000c10;
+  }
+  .main-project .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-project .projects a img {
+    width: 290px;
+    height: 290px;
+    margin-top: 100px;
+    gap: 1px;
+    filter: none;
+  }
+  .main-project .projects a img:hover {
+    filter: drop-shadow(0rem 0px 0 #88f7ff);
+    transform: scale(1.1);
+  }
+  /* MAIN pagina de contacto */
+  .grid-contact {
+    width: 100%;
+    height: 1000px;
+    background-color: #000c10;
+    /* Estilo del contenedor del formulario */
+    /* Estilo de la leyenda */
+    /* Estilo de las etiquetas */
+    /* Estilo de los inputs y textarea */
+    /* Estilo del botón de enviar */
+    /* Estilo para resaltar campos requeridos */
+    /* Estilo para el mensaje de validación */
+    /* Estilo para el mensaje de validación personalizado */
+  }
+  .grid-contact .datos-personales {
+    width: 300px;
+    font-family: "Arimo", sans-serif;
+    font-size: 15;
+    font-weight: 7;
+    color: white;
+  }
+  .grid-contact form {
+    width: 80%; /* Ancho del formulario */
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin-left: 40px;
+    padding-top: 50px;
+  }
+  .grid-contact fieldset {
+    border: none;
+    padding: 1px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .grid-contact legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Arimo", sans-serif;
+    font-size: 28px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+  }
+  .grid-contact label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  .grid-contact input[type=text],
+  .grid-contact input[type=email],
+  .grid-contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  .grid-contact input[type=submit] {
+    width: 100%;
+    padding: 10px;
+    background-color: #00F0FF;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+  }
+  .grid-contact input[type=submit]:hover {
+    background-color: #FF9212;
+  }
+  .grid-contact input[type=submit]:active {
+    transform: scale(0.95); /* Escala el botón al 98% de su tamaño original */
+    box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
+  }
+  .grid-contact input:required,
+  .grid-contact textarea:required {
+    border-color: #007bff;
+  }
+  .grid-contact input:invalid,
+  .grid-contact textarea:invalid {
+    border-color: #dc3545;
+  }
+  .grid-contact input:invalid + span,
+  .grid-contact textarea:invalid + span {
+    display: inline-block;
+    font-size: 0.8em;
+    color: #dc3545;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 320px) {
+  .header-index {
+    font-family: "Montserrat", sans-serif;
+    background-image: url("../assets/img/fondonegrorueda.jpg");
+    width: 100%;
+    height: 500px;
+    padding: 0.625rem;
+    /* boton CTA home */
+  }
+  .header-index .flexboxnav {
+    background-color: rgba(27, 32, 32, 0.3215686275);
+  }
+  .header-index .flexboxnav a img {
+    margin-right: 16px;
+  }
+  .header-index .flexbox-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 8px;
+    position: sticky;
+    top: 0;
+    padding: 8px;
+  }
+  .header-index .flexbox-ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  .header-index .flexbox-ul li a:hover {
+    color: #00f0ff;
+    text-decoration: none;
+  }
+  .header-index .collapse.navbar-collapse {
+    position: absolute; /* Establece la posición del menú desplegable */
+    top: 100%; /* Alinea el menú desplegable justo debajo del navbar */
+    right: 0;
+    z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
+    background-color: rgba(27, 32, 32, 0.3215686275); /* Opcional: establece el color de fondo */
+    border: 1px solid #070707; /* Opcional: añade un borde */
+    padding: 0.5rem 0.55rem; /* Opcional: añade espacio interno */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .header-index .nombre-home h1 {
+    color: rgba(255, 255, 255, 0.7960784314);
+    font-weight: lighter;
+    font-size: 24px;
+    letter-spacing: 20px;
+    padding: 3px;
+    margin-top: 15px;
+  }
+  .header-index .nombre-home h2 {
+    font-size: 12px;
+    font-weight: 200;
+    color: #00f0ff;
+    padding-left: 3px;
+    margin-bottom: 70px;
+  }
+  .header-index section a {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    gap: none;
+    padding: 10px 34px;
+    background: rgba(0, 0, 0, 0.5921568627);
+    border: 1px solid rgba(0, 255, 225, 0.062745098); /* Border color */
+    border-radius: 44px; /* Round border edges */
+    cursor: pointer;
+    outline: none;
+    font-size: 12px;
+    color: #00F0FF;
+    text-decoration: none;
+    width: -moz-fit-content;
+    width: fit-content; /* Ancho del botón ajustado al contenido */
+    margin: 0 auto;
+  }
+  .header-index section a:hover {
+    background: rgba(0, 255, 225, 0.3647058824); /* Background color on hover */
+    color: rgba(0, 0, 0, 0.5921568627) 255, 255, 255, 0; /* Text color on hover */
+  }
+  .header-index section a:active {
+    transform: scale(0.97); /* Escala el botón al 98% de su tamaño original */
+    box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
+  }
+  #logo {
+    width: 121px;
+    height: 41px;
+  }
+  .headerPages {
+    height: 250px;
+  }
+  .headerPages h1 {
+    font-size: 44px;
+    margin-top: 130px;
+  }
+  .mainServices h2 {
+    font-size: 12px;
+    padding: 30px;
+  }
+  .main-index {
+    background-color: #000c10;
+    width: 100%;
+    height: 900px;
+  }
+  .main-index .main-section h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: lighter;
+    color: #00F0FF;
+    padding-top: 50px;
+  }
+  .main-index .main-section h4 {
+    font-family: "Arimo", sans-serif;
+    font-size: 12PX;
+    font-weight: 7;
+    color: white;
+    margin: 15px;
+    padding: 25px;
+  }
+  .main-index .our-services h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: lighter;
+    color: #00F0FF;
+    margin: 40px;
+  }
+  .main-index #services-cards a img {
+    width: 105px;
+    height: 210px;
+    filter: none;
+  }
+  .main-index #services-cards a img:hover {
+    transform: scale(1.1);
+  }
+  .main-index #services-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .main-project {
+    height: 1350px;
+    background-color: #000c10;
+  }
+  .main-project .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-project .projects a img {
+    width: 220px;
+    height: 220px;
+    margin-top: 100px;
+    gap: 1px;
+    filter: none;
+  }
+  .main-project .projects a img:hover {
+    filter: drop-shadow(0rem 0px 0 #88f7ff);
+    transform: scale(1.1);
+  }
+  /* MAIN pagina de contacto */
+  .grid-contact {
+    width: 100%;
+    height: 1000px;
+    background-color: #000c10;
+    /* Estilo del contenedor del formulario */
+    /* Estilo de la leyenda */
+    /* Estilo de las etiquetas */
+    /* Estilo de los inputs y textarea */
+    /* Estilo del botón de enviar */
+    /* Estilo para resaltar campos requeridos */
+    /* Estilo para el mensaje de validación */
+    /* Estilo para el mensaje de validación personalizado */
+  }
+  .grid-contact .datos-personales {
+    width: 250px;
+    font-family: "Arimo", sans-serif;
+    font-size: 15;
+    font-weight: 7;
+    color: white;
+  }
+  .grid-contact form {
+    width: 80%; /* Ancho del formulario */
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin-left: 25px;
+    padding-top: 50px;
+  }
+  .grid-contact fieldset {
+    border: none;
+    padding: 1px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .grid-contact legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Arimo", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+  }
+  .grid-contact label {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .grid-contact input[type=text],
+  .grid-contact input[type=email],
+  .grid-contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  .grid-contact input[type=submit] {
+    width: 100%;
+    padding: 10px;
+    background-color: #00F0FF;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+  }
+  .grid-contact input[type=submit]:hover {
+    background-color: #FF9212;
+  }
+  .grid-contact input[type=submit]:active {
+    transform: scale(0.95); /* Escala el botón al 98% de su tamaño original */
+    box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
+  }
+  .grid-contact input:required,
+  .grid-contact textarea:required {
+    border-color: #007bff;
+  }
+  .grid-contact input:invalid,
+  .grid-contact textarea:invalid {
+    border-color: #dc3545;
+  }
+  .grid-contact input:invalid + span,
+  .grid-contact textarea:invalid + span {
+    display: inline-block;
+    font-size: 0.8em;
+    color: #dc3545;
+    margin-top: 5px;
+  }
 }/*# sourceMappingURL=style.css.map */

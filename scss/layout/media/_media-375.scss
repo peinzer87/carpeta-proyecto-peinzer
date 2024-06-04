@@ -45,7 +45,7 @@
         .nombre-home h1{
             color: #ffffffcb;
             font-weight:lighter;
-            letter-spacing: 30px;
+            letter-spacing: 20px;
             font-size: 24px;
             padding: 5px;
             margin-top: 15px;
@@ -55,35 +55,35 @@
             font-weight: 200;
             color: #00f0ff;
             padding-left: 5px;
-            margin-bottom: 70px;
+            margin-bottom: 150px;
         }
         /* boton CTA home */
         section a{
-            display: flex;
-            flex-direction: column;
-            align-content: center;
+            @include flex (column,none,center,none);
             padding: 10px 34px;
-            background:transparentize($color: #00000097, $amount: 0);
-            border: 1px solid #00ffe110; /* Border color */
+            background:  #fff70012; /* Background color on hover */
+            backdrop-filter: (.5625rem);
+            border: 1px solid $color-terciario; /* Border color */
             border-radius: 44px; /* Round border edges */
             cursor: pointer;
             outline: none;
-            font-size: 12px;
-            color: $color-principal-texto;
-            text-decoration: none;
-            width: fit-content; /* Ancho del botón ajustado al contenido */
-            margin: 0 auto;
-            position: relative;
-            z-index: 2;
-            &:hover{
-                background: #00ffe15d; /* Background color on hover */
-                color: #00000097(255, 255, 255, 0); /* Text color on hover */
+            font-weight: lighter;
+              font-size: 16px;
+              color: $color-terciario;
+              text-decoration: none;
+              width: fit-content; /* Ancho del botón ajustado al contenido */
+              margin: 0 auto;
+              position: relative;
+              z-index: 2;
+              &:hover{
+                background: $color-terciario; /* Background color on hover */
+                color: #000000; /* Text color on hover */
               }
               &:active{
                 transform: scale(0.97); /* Escala el botón al 98% de su tamaño original */
                 box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
               }
-        }
+          }
     }
     //**//FIN HEADER HOME
     
@@ -109,7 +109,7 @@
     .main-index{
         background-color: $color-fondo;
         width: 100%;
-        height: 1050px;
+        height: 100%;
         .main-section h3{
             display: flex;
             justify-content: center;

@@ -7,10 +7,12 @@
     padding: .625rem;
     height: 350px;
         h1{
-        color: $color-principal-texto;
-        font-weight: lighter;
-        font-size: 130px;
-        margin-top: 148px;
+        background-image: linear-gradient(to top, #003134, #005155, #017379, #01969f, #01bcc7, #01bcc7, #01bcc7, #01969f, #017379, #005155, #003134);        font-weight: lighter;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 180px;
+        margin-top: 15px;
         -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
@@ -41,10 +43,10 @@
     .flexbox-ul li a{
         color: $color-secundario-texto;
         text-decoration: none;
-    }
-    .flexbox-ul li a:hover {
-        color: $color-principal-texto;
-        text-decoration: none;
+        &:hover{
+          color: $color-principal-texto;
+          text-decoration: none;
+        }
     }
         /* -
  * 

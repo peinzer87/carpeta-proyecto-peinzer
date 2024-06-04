@@ -6,7 +6,6 @@
     height:100vh;
     padding: .625rem;
     
-
 video{
   position: absolute;
   top: 0;
@@ -38,52 +37,50 @@ video{
         }
     }
     .nombre-home h1{
-      color: #ffffffcb;
-      font-size: 140px;
-      letter-spacing: 40px;
-      font-weight:lighter;
-      margin-left: 30px;
+      color: $color-secundario-texto;
+      font-size: 120px;
+      letter-spacing: 50px;
+      font-weight: lighter;
       position: relative;
       z-index: 2;
     }
     .nombre-home{
-    padding-top: 200px;
-    padding-left: 30px;
+      margin-left: 30px;
+    padding-top: 150px;
     }
     .nombre-home h2{
         font-size: 50px;
         font-weight:200;
-        color: $color-principal-texto;
-        margin-bottom: 6.25rem;
+        color:$color-principal-texto;
         margin-left: 30px;
+        margin-bottom: 150px;
         position: relative;
         z-index: 2;
     }
     section a{
       @include flex (column,none,center,none);
       padding: 10px 34px;
-      font-size: 24px;
-      backdrop-filter: blur 6.4px;
-      background:transparentize($color: #00000097, $amount: 0);
-      border: 1px solid #00ffe110; /* Border color */
+      background:  #fff70012; /* Background color on hover */
+      backdrop-filter: (.5625rem);
+      border: 1px solid $color-terciario; /* Border color */
       border-radius: 44px; /* Round border edges */
       cursor: pointer;
       outline: none;
-        font-size: 34px;
-        color: $color-principal-texto;
+      font-weight: lighter;
+        font-size: 28px;
+        color: $color-terciario;
         text-decoration: none;
         width: fit-content; /* Ancho del botón ajustado al contenido */
         margin: 0 auto;
         position: relative;
         z-index: 2;
         &:hover{
-          background: #00ffe15d; /* Background color on hover */
-          color: #00000097(255, 255, 255, 0); /* Text color on hover */
+          background: $color-terciario; /* Background color on hover */
+          color: #000000; /* Text color on hover */
         }
         &:active{
           transform: scale(0.97); /* Escala el botón al 98% de su tamaño original */
           box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
         }
     }
-
 }
