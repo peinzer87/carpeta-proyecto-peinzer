@@ -40,8 +40,8 @@
         font-size: 1.5625rem;
         font-weight: 7;
         color:$color-secundario-texto;
-        margin: 8.125rem;
-        padding: 100px;
+        margin: 70px;
+        padding: 70px;
         will-change: transform;
         transition: transform 0.3s ease-in-out;
         transform: perspective(900px) rotateX(0deg) rotateY(0deg) scale(1);
@@ -59,16 +59,20 @@
         margin: 80px;
     }
     #services-cards {
-        display:flex;
+        display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        flex-wrap: nowrap; // Asegura que los elementos no se envuelvan a una nueva línea
+        gap: 20px; // Añade espacio entre los elementos
         a {
+            flex: 1 1 auto; // Permite que los elementos crezcan y se encojan automáticamente
+            min-width: 0; // Permite que los elementos se encojan por debajo del ancho mínimo predeterminado
+            margin-bottom: 1rem; // Margen inferior para separación entre elementos
             img {
-                border-radius: 5px;
-                width: 450px;
-                height: 621px;
+                width: 100%; // Hace que la imagen ocupe el 100% del ancho del contenedor padre
+                height: auto; // Mantiene la relación de aspecto de la imagen
                 filter: none;
-                transition: transform 0.5s ease-in-out; // Añade una transición suave
+                transition: transform 0.3s ease; // Añade transición suave al hover
                 &:hover {
                     transform: scale(1.1);
                 }

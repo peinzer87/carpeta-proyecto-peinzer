@@ -43,19 +43,17 @@
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); 
         }
         .nombre-home h1{
-            color: #ffffffcb;
-            font-weight:lighter;
-            letter-spacing: 20px;
-            font-size: 24px;
-            padding: 5px;
-            margin-top: 15px;
-        }
+                color: #ffffffcb;
+                font-weight:lighter;
+                font-size: 28px;
+                letter-spacing: 20px;
+                margin-top: 15px;
+            }
         .nombre-home h2 {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 200;
             color: #00f0ff;
-            padding-left: 5px;
-            margin-bottom: 150px;
+            margin-bottom: 120px;
         }
         /* boton CTA home */
         section a{
@@ -116,14 +114,15 @@
             font-size: 24px;
             font-weight: lighter;
             color:#00F0FF;
-            padding-top: 5rem;
+            padding: 1.875rem;
         }
         .main-section h4{
             font-family: "Arimo", sans-serif;
             font-size: 12PX;
             font-weight: 7;
             color:white;
-            margin: 50px;
+            margin: 15px;
+            padding: 1.5625rem;
         }
         .our-services h3{
             display: flex;
@@ -152,8 +151,7 @@
     
     //*main pagina de projectos (imagenes)  *//
     .main-project{
-        height: 1700px;
-        background-color: $color-fondo;
+        height: 100%;
         .projects{
             display: flex;
             flex-direction: column;
@@ -181,7 +179,7 @@
         height: 1000px;
         background-color: $color-fondo;
         .datos-personales{
-            width: 300px;
+            width: 90%;
             font-family: "Arimo", sans-serif;
             font-size: 15;
             font-weight: 7;
@@ -208,7 +206,7 @@
             font-weight: bold;
             margin-bottom: 20px;
             font-family: "Arimo", sans-serif;
-            font-size: 28px;
+            font-size: 1.5rem;
             font-weight: 100;
             color: $color-secundario-texto;
             text-align: center;
@@ -236,22 +234,23 @@
         input[type="submit"] {
             width: 100%;
             padding: 10px;
-            background-color: #00F0FF;
-            color: #000000;
-            border: none;
+            background-color: #fff70012;
+            color: $color-terciario;
+            border: 1px solid $color-terciario;
             border-radius: 5px;
             cursor: pointer;
             font-size: 1.2em;
             transition: background-color 0.3s ease;
+            &:hover{
+                border: 1px solid;
+                background-color: $color-terciario;
+                color: rgb(0, 0, 0);
+            }
+            &:active{
+                transform: scale(0.95); /* Escala el botón al 98% de su tamaño original */
+                box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */  
+            }
         }
-        
-        input[type="submit"]:hover {
-            background-color: #FF9212;
-        }
-        input[type="submit"]:active {
-            transform: scale(0.95); /* Escala el botón al 98% de su tamaño original */
-            box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */    }
-        
         /* Estilo para resaltar campos requeridos */
         input:required,
         textarea:required {

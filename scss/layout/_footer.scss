@@ -1,6 +1,6 @@
 footer {
-    background-color: #000c10; /* Fondo oscuro teal */
-    color: #ffffff; /* Texto en blanco */
+    background-color: $color-fondo; /* Fondo oscuro teal */
+    color: $color-secundario-texto; /* Texto en blanco */
     padding: 10px; /* Espaciado interno */
     text-align: center; /* Texto centrado */
     font-size: 20px;

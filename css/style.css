@@ -54,7 +54,7 @@
     font-weight: 200;
     color: #00F0FF;
     margin-left: 30px;
-    margin-bottom: 150px;
+    margin-bottom: 120px;
     position: relative;
     z-index: 2; }
   .header-index section a {
@@ -174,7 +174,7 @@
 footer {
   background-color: #000c10;
   /* Fondo oscuro teal */
-  color: #ffffff;
+  color: white;
   /* Texto en blanco */
   padding: 10px;
   /* Espaciado interno */
@@ -228,8 +228,8 @@ footer {
     font-size: 1.5625rem;
     font-weight: 7;
     color: white;
-    margin: 8.125rem;
-    padding: 100px;
+    margin: 70px;
+    padding: 70px;
     will-change: transform;
     transition: transform 0.3s ease-in-out;
     transform: perspective(900px) rotateX(0deg) rotateY(0deg) scale(1); }
@@ -246,15 +246,20 @@ footer {
   .main-index #services-cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; }
-    .main-index #services-cards a img {
-      border-radius: 5px;
-      width: 450px;
-      height: 621px;
-      filter: none;
-      transition: transform 0.5s ease-in-out; }
-      .main-index #services-cards a img:hover {
-        transform: scale(1.1); }
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    gap: 20px; }
+    .main-index #services-cards a {
+      flex: 1 1 auto;
+      min-width: 0;
+      margin-bottom: 1rem; }
+      .main-index #services-cards a img {
+        width: 100%;
+        height: auto;
+        filter: none;
+        transition: transform 0.3s ease; }
+        .main-index #services-cards a img:hover {
+          transform: scale(1.1); }
 
 .grid-contact {
   width: 100%;
@@ -269,7 +274,7 @@ footer {
   /* Estilo para el mensaje de validación */
   /* Estilo para el mensaje de validación personalizado */ }
   .grid-contact .datos-personales {
-    width: 600px;
+    width: 90%;
     font-family: "Arimo", sans-serif;
     font-size: 15;
     font-weight: 7;
@@ -317,15 +322,15 @@ footer {
     cursor: pointer;
     font-size: 1.2em;
     transition: background-color 0.3s ease; }
-  .grid-contact input[type="submit"]:hover {
-    border: 1px solid;
-    background-color: #ce8300;
-    color: black; }
-  .grid-contact input[type="submit"]:active {
-    transform: scale(0.95);
-    /* Escala el botón al 98% de su tamaño original */
-    box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295);
-    /* Reduce la sombra */ }
+    .grid-contact input[type="submit"]:hover {
+      border: 1px solid;
+      background-color: #ce8300;
+      color: black; }
+    .grid-contact input[type="submit"]:active {
+      transform: scale(0.95);
+      /* Escala el botón al 98% de su tamaño original */
+      box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295);
+      /* Reduce la sombra */ }
   .grid-contact input:required,
   .grid-contact textarea:required {
     border-color: #007bff; }
@@ -434,9 +439,6 @@ footer {
     .header-index .flexbox-ul li a:hover {
       color: #00f0ff;
       text-decoration: none; }
-  .header-index .nombre-home {
-    padding-top: 6.25rem;
-    padding-left: 1.875rem; }
   .header-index .nombre-home h1 {
     color: #ffffffcb;
     font-weight: lighter;
@@ -505,7 +507,8 @@ footer {
       font-size: 1.25rem;
       font-weight: 7;
       color: white;
-      margin: 8.125rem; }
+      margin: 30px;
+      padding: 50px; }
     .main-index .our-services h3 {
       display: flex;
       justify-content: center;
@@ -513,17 +516,23 @@ footer {
       font-weight: lighter;
       color: #00F0FF;
       margin: 80px; }
-    .main-index #services-cards a img {
-      flex-wrap: wrap;
-      width: 20.625rem;
-      height: 31.3125rem;
-      filter: none; }
-    .main-index #services-cards a img:hover {
-      transform: scale(1.1); }
     .main-index #services-cards {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly; }
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+      gap: 20px; }
+      .main-index #services-cards a {
+        flex: 1 1 auto;
+        min-width: 0;
+        margin-bottom: 1rem; }
+        .main-index #services-cards a img {
+          width: 100%;
+          height: auto;
+          filter: none;
+          transition: transform 0.3s ease; }
+          .main-index #services-cards a img:hover {
+            transform: scale(1.1); }
   .main-project {
     height: 37.5rem;
     background-color: #000c10; }
@@ -552,7 +561,7 @@ footer {
     /* Estilo para el mensaje de validación */
     /* Estilo para el mensaje de validación personalizado */ }
     .grid-contact .datos-personales {
-      width: 37.5rem;
+      width: 90%;
       font-family: "Arimo", sans-serif;
       font-size: .9375rem;
       font-weight: 7;
@@ -593,20 +602,22 @@ footer {
     .grid-contact input[type="submit"] {
       width: 100%;
       padding: 10px;
-      background-color: #00F0FF;
-      color: #000000;
-      border: none;
+      background-color: #fff70012;
+      color: #ce8300;
+      border: 1px solid #ce8300;
       border-radius: 5px;
       cursor: pointer;
       font-size: 1.2em;
       transition: background-color 0.3s ease; }
-    .grid-contact input[type="submit"]:hover {
-      background-color: #FF9212; }
-    .grid-contact input[type="submit"]:active {
-      transform: scale(0.95);
-      /* Escala el botón al 98% de su tamaño original */
-      box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295);
-      /* Reduce la sombra */ }
+      .grid-contact input[type="submit"]:hover {
+        border: 1px solid;
+        background-color: #ce8300;
+        color: black; }
+      .grid-contact input[type="submit"]:active {
+        transform: scale(0.95);
+        /* Escala el botón al 98% de su tamaño original */
+        box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295);
+        /* Reduce la sombra */ }
     .grid-contact input:required,
     .grid-contact textarea:required {
       border-color: #007bff; }
@@ -656,14 +667,15 @@ footer {
     .header-index .nombre-home h1 {
       color: #ffffffcb;
       font-weight: lighter;
-      font-size: 60px;
-      padding: 10px; }
+      font-size: 4.125rem;
+      letter-spacing: 20px; }
     .header-index .nombre-home h2 {
-      font-size: 32px;
+      font-size: 1.5rem;
       font-weight: 200;
       color: #00f0ff;
-      padding-left: 0.875rem;
-      margin-bottom: 190px; }
+      margin-bottom: 190px;
+      white-space: nowrap;
+      letter-spacing: calc(1vw - 1px); }
     .header-index section a {
       display: flex;
       flex-direction: column;
@@ -705,9 +717,9 @@ footer {
     height: 41px; }
   .headerPages {
     height: 250px; }
-  .headerPages h1 {
-    font-size: 60px;
-    margin-top: 120px; }
+    .headerPages h1 {
+      font-size: 60px;
+      margin-top: 110px; }
   .mainServices h2 {
     font-size: 16px; }
   .main-index {
@@ -723,7 +735,7 @@ footer {
       padding-top: 5rem; }
     .main-index .main-section h4 {
       font-family: "Arimo", sans-serif;
-      font-size: .75rem;
+      font-size: 20px;
       font-weight: 7;
       color: white;
       margin: 1.875rem;
@@ -735,37 +747,46 @@ footer {
       font-weight: lighter;
       color: #00F0FF;
       margin: 80px; }
-    .main-index #services-cards a img {
-      width: 250px;
-      height: 421px;
-      filter: none; }
-    .main-index #services-cards a img:hover {
-      transform: scale(1.1); }
     .main-index #services-cards {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly; }
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+      gap: 20px; }
+      .main-index #services-cards a {
+        flex: 1 1 auto;
+        min-width: 0;
+        margin-bottom: 1rem; }
+        .main-index #services-cards a img {
+          width: 100%;
+          height: auto;
+          filter: none;
+          transition: transform 0.3s ease; }
+          .main-index #services-cards a img:hover {
+            transform: scale(1.1); }
   .main-project {
-    height: 450px;
+    height: 100%;
     background-color: #000c10; }
     .main-project .projects {
       display: flex;
-      justify-content: space-evenly; }
-    .main-project .projects a img {
-      width: 160px;
-      height: 160px;
-      margin-top: 100px;
-      filter: none; }
-    .main-project .projects a img:hover {
-      filter: drop-shadow(0rem 0px 0 #88f7ff);
-      transform: scale(1.1); }
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin-bottom: 6.25rem; }
+      .main-project .projects a img {
+        width: 160px;
+        height: 160px;
+        margin-top: 100px;
+        filter: none; }
+        .main-project .projects a img:hover {
+          filter: drop-shadow(0rem 0px 0 #88f7ff);
+          transform: scale(1.2); }
   /* MAIN pagina de contacto */
   .grid-contact {
     width: 100%;
     height: 1000px;
     background-color: #000c10; }
     .grid-contact .datos-personales {
-      width: 600px;
+      width: 90%;
       font-family: "Arimo", sans-serif;
       font-size: 15px;
       font-weight: 7;
@@ -804,19 +825,22 @@ footer {
     .grid-contact input[type="submit"] {
       width: 100%;
       padding: 10px;
-      background-color: #00F0FF;
-      color: #000000;
-      border: none;
+      background-color: #fff70012;
+      color: #ce8300;
+      border: 1px solid #ce8300;
       border-radius: 5px;
       cursor: pointer;
       font-size: 1.2em;
       transition: background-color 0.3s ease; }
-    .grid-contact input[type="submit"]:hover {
-      background-color: #00bdcaa7;
-      color: black; }
-    .grid-contact input[type="submit"]:active {
-      transform: scale(0.95);
-      box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); }
+      .grid-contact input[type="submit"]:hover {
+        border: 1px solid;
+        background-color: #ce8300;
+        color: black; }
+      .grid-contact input[type="submit"]:active {
+        transform: scale(0.95);
+        /* Escala el botón al 98% de su tamaño original */
+        box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295);
+        /* Reduce la sombra */ }
     .grid-contact input:required,
     .grid-contact textarea:required {
       border-color: #007bff; }
@@ -872,7 +896,7 @@ footer {
       /* Opcional: añade espacio interno */
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); }
     .header-index .nombre-home {
-      margin-left: 5px; }
+      margin: .9375rem; }
       .header-index .nombre-home h1 {
         color: #ffffffcb;
         font-weight: lighter;
@@ -941,14 +965,14 @@ footer {
       font-size: 30px;
       font-weight: lighter;
       color: #00F0FF;
-      padding-top: 5rem; }
+      padding: 2.5rem; }
     .main-index .main-section h4 {
       font-family: "Arimo", sans-serif;
       font-size: .75rem;
       font-weight: 7;
       color: white;
       margin: 10px;
-      padding: 40px; }
+      padding: 30px; }
     .main-index .our-services h3 {
       display: flex;
       justify-content: center;
@@ -956,16 +980,23 @@ footer {
       font-weight: lighter;
       color: #00F0FF;
       margin: 80px; }
-    .main-index #services-cards a img {
-      width: 135px;
-      height: 221px;
-      filter: none; }
-    .main-index #services-cards a img:hover {
-      transform: scale(1.1); }
     .main-index #services-cards {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly; }
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      gap: 20px; }
+      .main-index #services-cards a {
+        flex: 1 1 auto;
+        min-width: 0;
+        margin-bottom: 1rem; }
+        .main-index #services-cards a img {
+          width: 100%;
+          height: auto;
+          filter: none;
+          transition: transform 0.3s ease; }
+          .main-index #services-cards a img:hover {
+            transform: scale(1.1); }
   .main-project {
     height: 1700px;
     background-image: linear-gradient(to left bottom, #000000, #000000, #000000, #000000, #000000, #1b1417, #2c212a, #3d303f, #565778, #5686b3, #35bae4, #00f0ff); }
@@ -1037,20 +1068,22 @@ footer {
     .grid-contact input[type="submit"] {
       width: 100%;
       padding: 10px;
-      background-color: #00F0FF;
-      color: #000000;
-      border: none;
+      background-color: #fff70012;
+      color: #ce8300;
+      border: 1px solid #ce8300;
       border-radius: 5px;
       cursor: pointer;
       font-size: 1.2em;
       transition: background-color 0.3s ease; }
-    .grid-contact input[type="submit"]:hover {
-      background-color: #FF9212; }
-    .grid-contact input[type="submit"]:active {
-      transform: scale(0.95);
-      /* Escala el botón al 98% de su tamaño original */
-      box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295);
-      /* Reduce la sombra */ }
+      .grid-contact input[type="submit"]:hover {
+        border: 1px solid;
+        background-color: #ce8300;
+        color: black; }
+      .grid-contact input[type="submit"]:active {
+        transform: scale(0.95);
+        /* Escala el botón al 98% de su tamaño original */
+        box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295);
+        /* Reduce la sombra */ }
     .grid-contact input:required,
     .grid-contact textarea:required {
       border-color: #007bff; }
@@ -1106,244 +1139,6 @@ footer {
       padding: 0.5rem 0.55rem;
       /* Opcional: añade espacio interno */
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); }
-    .header-index .nombre-home h1 {
-      color: #ffffffcb;
-      font-weight: lighter;
-      letter-spacing: 20px;
-      font-size: 24px;
-      padding: 5px;
-      margin-top: 15px; }
-    .header-index .nombre-home h2 {
-      font-size: 14px;
-      font-weight: 200;
-      color: #00f0ff;
-      padding-left: 5px;
-      margin-bottom: 150px; }
-    .header-index section a {
-      display: flex;
-      flex-direction: column;
-      justify-content: none;
-      align-items: center;
-      gap: none;
-      padding: 10px 34px;
-      background: #fff70012;
-      /* Background color on hover */
-      backdrop-filter: 0.5625rem;
-      border: 1px solid #ce8300;
-      /* Border color */
-      border-radius: 44px;
-      /* Round border edges */
-      cursor: pointer;
-      outline: none;
-      font-weight: lighter;
-      font-size: 16px;
-      color: #ce8300;
-      text-decoration: none;
-      width: fit-content;
-      /* Ancho del botón ajustado al contenido */
-      margin: 0 auto;
-      position: relative;
-      z-index: 2; }
-      .header-index section a:hover {
-        background: #ce8300;
-        /* Background color on hover */
-        color: #000000;
-        /* Text color on hover */ }
-      .header-index section a:active {
-        transform: scale(0.97);
-        /* Escala el botón al 98% de su tamaño original */
-        box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295);
-        /* Reduce la sombra */ }
-  #logo {
-    width: 121px;
-    height: 41px; }
-  .headerPages {
-    height: 250px; }
-  .headerPages h1 {
-    font-size: 44px;
-    margin-top: 130px; }
-  .mainServices h2 {
-    font-size: 12px;
-    padding: 30px; }
-  .main-index {
-    background-color: #000c10;
-    width: 100%;
-    height: 100%; }
-    .main-index .main-section h3 {
-      display: flex;
-      justify-content: center;
-      font-size: 24px;
-      font-weight: lighter;
-      color: #00F0FF;
-      padding-top: 5rem; }
-    .main-index .main-section h4 {
-      font-family: "Arimo", sans-serif;
-      font-size: 12PX;
-      font-weight: 7;
-      color: white;
-      margin: 50px; }
-    .main-index .our-services h3 {
-      display: flex;
-      justify-content: center;
-      font-size: 24px;
-      font-weight: lighter;
-      color: #00F0FF;
-      margin: 80px; }
-    .main-index #services-cards a img {
-      width: 110px;
-      height: 211px;
-      filter: none; }
-    .main-index #services-cards a img:hover {
-      transform: scale(1.1); }
-    .main-index #services-cards {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly; }
-  .main-project {
-    height: 1700px;
-    background-color: #000c10; }
-    .main-project .projects {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .main-project .projects a img {
-        width: 290px;
-        height: 290px;
-        margin-top: 100px;
-        gap: 1px;
-        filter: none; }
-        .main-project .projects a img:hover {
-          filter: drop-shadow(0rem 0px 0 #88f7ff);
-          transform: scale(1.1); }
-  /* MAIN pagina de contacto */
-  .grid-contact {
-    width: 100%;
-    height: 1000px;
-    background-color: #000c10;
-    /* Estilo del contenedor del formulario */
-    /* Estilo de la leyenda */
-    /* Estilo de las etiquetas */
-    /* Estilo de los inputs y textarea */
-    /* Estilo del botón de enviar */
-    /* Estilo para resaltar campos requeridos */
-    /* Estilo para el mensaje de validación */
-    /* Estilo para el mensaje de validación personalizado */ }
-    .grid-contact .datos-personales {
-      width: 300px;
-      font-family: "Arimo", sans-serif;
-      font-size: 15;
-      font-weight: 7;
-      color: white; }
-    .grid-contact form {
-      width: 80%;
-      /* Ancho del formulario */
-      max-width: 600px;
-      /* Ancho máximo del formulario */
-      margin-left: 40px;
-      padding-top: 50px; }
-    .grid-contact fieldset {
-      border: none;
-      padding: 1px;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
-    .grid-contact legend {
-      font-size: 1.5em;
-      font-weight: bold;
-      margin-bottom: 20px;
-      font-family: "Arimo", sans-serif;
-      font-size: 28px;
-      font-weight: 100;
-      color: white;
-      text-align: center; }
-    .grid-contact label {
-      font-size: 1.2em;
-      margin-bottom: 5px; }
-    .grid-contact input[type="text"],
-    .grid-contact input[type="email"],
-    .grid-contact textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1em; }
-    .grid-contact input[type="submit"] {
-      width: 100%;
-      padding: 10px;
-      background-color: #00F0FF;
-      color: #000000;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1.2em;
-      transition: background-color 0.3s ease; }
-    .grid-contact input[type="submit"]:hover {
-      background-color: #FF9212; }
-    .grid-contact input[type="submit"]:active {
-      transform: scale(0.95);
-      /* Escala el botón al 98% de su tamaño original */
-      box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295);
-      /* Reduce la sombra */ }
-    .grid-contact input:required,
-    .grid-contact textarea:required {
-      border-color: #007bff; }
-    .grid-contact input:invalid,
-    .grid-contact textarea:invalid {
-      border-color: #dc3545; }
-    .grid-contact input:invalid + span,
-    .grid-contact textarea:invalid + span {
-      display: inline-block;
-      font-size: 0.8em;
-      color: #dc3545;
-      margin-top: 5px; } }
-
-@media (max-width: 320px) {
-  .header-index {
-    font-family: "Montserrat", sans-serif;
-    width: 100%;
-    height: 500px;
-    padding: .625rem;
-    /* boton CTA home */ }
-    .header-index .headerPages {
-      width: 100%;
-      height: 500px; }
-    .header-index .flexboxnav {
-      background-color: #1b202052; }
-    .header-index .flexboxnav a img {
-      margin-right: 16px; }
-    .header-index .flexbox-ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: left;
-      gap: 8px;
-      position: sticky;
-      top: 0;
-      padding: 8px; }
-    .header-index .flexbox-ul li a {
-      color: white;
-      text-decoration: none;
-      font-size: 12px; }
-    .header-index .flexbox-ul li a:hover {
-      color: #00f0ff;
-      text-decoration: none; }
-    .header-index .collapse.navbar-collapse {
-      position: absolute;
-      /* Establece la posición del menú desplegable */
-      top: 100%;
-      /* Alinea el menú desplegable justo debajo del navbar */
-      right: 0;
-      z-index: 1000;
-      /* Asegúrate de que el menú esté por encima de otros elementos */
-      background-color: #1b202052;
-      /* Opcional: establece el color de fondo */
-      border: 1px solid #070707;
-      /* Opcional: añade un borde */
-      padding: 0.5rem 0.55rem;
-      /* Opcional: añade espacio interno */
-      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); }
-    .header-index .nombre-home {
-      padding-left: 2px; }
     .header-index .nombre-home h1 {
       color: #ffffffcb;
       font-weight: lighter;
@@ -1411,24 +1206,24 @@ footer {
       font-size: 24px;
       font-weight: lighter;
       color: #00F0FF;
-      padding-top: 50px; }
+      padding: 1.875rem; }
     .main-index .main-section h4 {
       font-family: "Arimo", sans-serif;
       font-size: 12PX;
       font-weight: 7;
       color: white;
       margin: 15px;
-      padding: 25px; }
+      padding: 1.5625rem; }
     .main-index .our-services h3 {
       display: flex;
       justify-content: center;
       font-size: 24px;
       font-weight: lighter;
       color: #00F0FF;
-      margin: 40px; }
+      margin: 80px; }
     .main-index #services-cards a img {
-      width: 105px;
-      height: 210px;
+      width: 110px;
+      height: 211px;
       filter: none; }
     .main-index #services-cards a img:hover {
       transform: scale(1.1); }
@@ -1437,21 +1232,267 @@ footer {
       flex-direction: row;
       justify-content: space-evenly; }
   .main-project {
-    height: 1350px;
-    background-color: #000c10; }
+    height: 100%; }
     .main-project .projects {
       display: flex;
       flex-direction: column;
       align-items: center; }
-    .main-project .projects a img {
-      width: 220px;
-      height: 220px;
-      margin-top: 100px;
-      gap: 1px;
-      filter: none; }
-    .main-project .projects a img:hover {
-      filter: drop-shadow(0rem 0px 0 #88f7ff);
-      transform: scale(1.1); }
+      .main-project .projects a img {
+        width: 290px;
+        height: 290px;
+        margin-top: 100px;
+        gap: 1px;
+        filter: none; }
+        .main-project .projects a img:hover {
+          filter: drop-shadow(0rem 0px 0 #88f7ff);
+          transform: scale(1.1); }
+  /* MAIN pagina de contacto */
+  .grid-contact {
+    width: 100%;
+    height: 1000px;
+    background-color: #000c10;
+    /* Estilo del contenedor del formulario */
+    /* Estilo de la leyenda */
+    /* Estilo de las etiquetas */
+    /* Estilo de los inputs y textarea */
+    /* Estilo del botón de enviar */
+    /* Estilo para resaltar campos requeridos */
+    /* Estilo para el mensaje de validación */
+    /* Estilo para el mensaje de validación personalizado */ }
+    .grid-contact .datos-personales {
+      width: 90%;
+      font-family: "Arimo", sans-serif;
+      font-size: 15;
+      font-weight: 7;
+      color: white; }
+    .grid-contact form {
+      width: 80%;
+      /* Ancho del formulario */
+      max-width: 600px;
+      /* Ancho máximo del formulario */
+      margin-left: 40px;
+      padding-top: 50px; }
+    .grid-contact fieldset {
+      border: none;
+      padding: 1px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
+    .grid-contact legend {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 20px;
+      font-family: "Arimo", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 100;
+      color: white;
+      text-align: center; }
+    .grid-contact label {
+      font-size: 1.2em;
+      margin-bottom: 5px; }
+    .grid-contact input[type="text"],
+    .grid-contact input[type="email"],
+    .grid-contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em; }
+    .grid-contact input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #fff70012;
+      color: #ce8300;
+      border: 1px solid #ce8300;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.2em;
+      transition: background-color 0.3s ease; }
+      .grid-contact input[type="submit"]:hover {
+        border: 1px solid;
+        background-color: #ce8300;
+        color: black; }
+      .grid-contact input[type="submit"]:active {
+        transform: scale(0.95);
+        /* Escala el botón al 98% de su tamaño original */
+        box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295);
+        /* Reduce la sombra */ }
+    .grid-contact input:required,
+    .grid-contact textarea:required {
+      border-color: #007bff; }
+    .grid-contact input:invalid,
+    .grid-contact textarea:invalid {
+      border-color: #dc3545; }
+    .grid-contact input:invalid + span,
+    .grid-contact textarea:invalid + span {
+      display: inline-block;
+      font-size: 0.8em;
+      color: #dc3545;
+      margin-top: 5px; } }
+
+@media (max-width: 320px) {
+  .header-index {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    height: 500px;
+    padding: .625rem;
+    /* boton CTA home */ }
+    .header-index .headerPages {
+      width: 100%;
+      height: 500px; }
+    .header-index .flexboxnav {
+      background-color: #1b202052; }
+    .header-index .flexboxnav a img {
+      margin-right: 16px; }
+    .header-index .flexbox-ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      gap: 8px;
+      position: sticky;
+      top: 0;
+      padding: 8px; }
+    .header-index .flexbox-ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 12px; }
+    .header-index .flexbox-ul li a:hover {
+      color: #00F0FF;
+      text-decoration: none; }
+    .header-index .collapse.navbar-collapse {
+      position: absolute;
+      /* Establece la posición del menú desplegable */
+      top: 100%;
+      /* Alinea el menú desplegable justo debajo del navbar */
+      right: 0;
+      z-index: 1000;
+      /* Asegúrate de que el menú esté por encima de otros elementos */
+      background-color: #1b202052;
+      /* Opcional: establece el color de fondo */
+      border: 1px solid #070707;
+      /* Opcional: añade un borde */
+      padding: 0.5rem 0.55rem;
+      /* Opcional: añade espacio interno */
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); }
+    .header-index .nombre-home {
+      padding-left: 2px; }
+    .header-index .nombre-home h1 {
+      color: #ffffffcb;
+      font-weight: lighter;
+      font-size: 28px;
+      letter-spacing: 20px;
+      margin-top: 15px; }
+    .header-index .nombre-home h2 {
+      font-size: 16px;
+      font-weight: 200;
+      color: #00F0FF;
+      margin-bottom: 120px; }
+    .header-index section a {
+      display: flex;
+      flex-direction: column;
+      justify-content: none;
+      align-items: center;
+      gap: none;
+      padding: 10px 34px;
+      background: #fff70012;
+      /* Background color on hover */
+      backdrop-filter: 0.5625rem;
+      border: 1px solid #ce8300;
+      /* Border color */
+      border-radius: 44px;
+      /* Round border edges */
+      cursor: pointer;
+      outline: none;
+      font-weight: lighter;
+      font-size: 16px;
+      color: #ce8300;
+      text-decoration: none;
+      width: fit-content;
+      /* Ancho del botón ajustado al contenido */
+      margin: 0 auto;
+      position: relative;
+      z-index: 2; }
+      .header-index section a:hover {
+        background: #ce8300;
+        /* Background color on hover */
+        color: #000000;
+        /* Text color on hover */ }
+      .header-index section a:active {
+        transform: scale(0.97);
+        /* Escala el botón al 98% de su tamaño original */
+        box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295);
+        /* Reduce la sombra */ }
+  #logo {
+    width: 121px;
+    height: 41px; }
+  .headerPages {
+    height: 250px; }
+    .headerPages h1 {
+      font-size: 44px;
+      margin-top: 130px; }
+  .mainServices h2 {
+    font-size: 12px;
+    padding: 30px; }
+  .main-index {
+    background-color: #000c10;
+    width: 100%;
+    height: 100%; }
+    .main-index .main-section h3 {
+      display: flex;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: lighter;
+      color: #00F0FF;
+      padding-top: 50px; }
+    .main-index .main-section h4 {
+      font-family: "Arimo", sans-serif;
+      font-size: .75rem;
+      font-weight: 7;
+      color: white;
+      margin: 10px;
+      padding: 25px;
+      margin-bottom: 4.125rem; }
+    .main-index .our-services h3 {
+      display: flex;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: lighter;
+      color: #00F0FF;
+      margin: 40px; }
+    .main-index #services-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+      gap: 20px;
+      padding-bottom: 3.125rem; }
+      .main-index #services-cards a {
+        flex: 1 1 auto;
+        min-width: 0;
+        margin-bottom: 1rem; }
+        .main-index #services-cards a img {
+          width: 100%;
+          height: auto;
+          filter: none;
+          transition: transform 0.3s ease; }
+          .main-index #services-cards a img:hover {
+            transform: scale(1.1); }
+  .main-project {
+    height: 100%; }
+    .main-project .projects {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .main-project .projects a img {
+        width: 220px;
+        height: 220px;
+        margin-top: 6.25rem;
+        margin-bottom: 7.25rem;
+        gap: 1px; }
+        .main-project .projects a img:hover {
+          filter: drop-shadow(0rem 0px 0 #88f7ff);
+          transform: scale(1.1); }
   /* MAIN pagina de contacto */
   .grid-contact {
     width: 100%;
@@ -1507,20 +1548,22 @@ footer {
     .grid-contact input[type="submit"] {
       width: 100%;
       padding: 10px;
-      background-color: #00F0FF;
-      color: #000000;
-      border: none;
+      background-color: #fff70012;
+      color: #ce8300;
+      border: 1px solid #ce8300;
       border-radius: 5px;
       cursor: pointer;
       font-size: 1.2em;
       transition: background-color 0.3s ease; }
-    .grid-contact input[type="submit"]:hover {
-      background-color: #FF9212; }
-    .grid-contact input[type="submit"]:active {
-      transform: scale(0.95);
-      /* Escala el botón al 98% de su tamaño original */
-      box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295);
-      /* Reduce la sombra */ }
+      .grid-contact input[type="submit"]:hover {
+        border: 1px solid;
+        background-color: #ce8300;
+        color: black; }
+      .grid-contact input[type="submit"]:active {
+        transform: scale(0.95);
+        /* Escala el botón al 98% de su tamaño original */
+        box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295);
+        /* Reduce la sombra */ }
     .grid-contact input:required,
     .grid-contact textarea:required {
       border-color: #007bff; }
