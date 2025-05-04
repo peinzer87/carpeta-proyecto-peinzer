@@ -20,7 +20,7 @@
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .header-index #logo {
   width: 121px;
@@ -63,7 +63,7 @@
 .header-index .nombre-home h2 {
   font-size: 50px;
   font-weight: 200;
-  color: #00F0FF;
+  color: #00f0ff;
   margin-left: 30px;
   margin-bottom: 6.25rem;
   position: relative;
@@ -79,7 +79,7 @@
   font-size: 24px;
   background: rgba(255, 247, 0, 0.0705882353); /* Background color on hover */
   -webkit-backdrop-filter: 0.5625rem;
-          backdrop-filter: 0.5625rem;
+  backdrop-filter: 0.5625rem;
   border: 1px solid #fff235; /* Border color */
   border-radius: 44px; /* Round border edges */
   cursor: pointer;
@@ -116,7 +116,7 @@
   */
 }
 .headerPages h1 {
-  color: #00F0FF;
+  color: #00f0ff;
   font-weight: lighter;
   font-size: 130px;
   margin-top: 148px;
@@ -129,7 +129,7 @@
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   filter: opacity(0.5);
 }
 .headerPages #logo {
@@ -214,13 +214,13 @@ footer #logo {
   font-size: 70px;
   letter-spacing: 10px;
   font-weight: lighter;
-  color: #00F0FF;
+  color: #00f0ff;
   padding-top: 150px;
 }
 .main-index .main-section h4 {
   border: 1px solid rgba(0, 238, 255, 0.062745098); /* Border color */
   -webkit-backdrop-filter: blur 6.4px;
-          backdrop-filter: blur 6.4px;
+  backdrop-filter: blur 6.4px;
   border-radius: 44px;
   background: rgba(1, 71, 88, 0.0666666667);
   font-family: "Arimo", sans-serif;
@@ -236,7 +236,7 @@ footer #logo {
   font-size: 70px;
   letter-spacing: 10px;
   font-weight: lighter;
-  color: #00F0FF;
+  color: #00f0ff;
   margin: 80px;
 }
 .main-index #services-cards {
@@ -301,8 +301,8 @@ footer #logo {
   font-size: 1.2em;
   margin-bottom: 5px;
 }
-.grid-contact input[type=text],
-.grid-contact input[type=email],
+.grid-contact input[type="text"],
+.grid-contact input[type="email"],
 .grid-contact textarea {
   width: 100%;
   padding: 10px;
@@ -311,10 +311,10 @@ footer #logo {
   border-radius: 5px;
   font-size: 1em;
 }
-.grid-contact input[type=submit] {
+.grid-contact input[type="submit"] {
   width: 100%;
   padding: 10px;
-  background-color: #00F0FF;
+  background-color: #00f0ff;
   color: #000000;
   border: 1px solid #000c10;
   border-radius: 5px;
@@ -322,12 +322,12 @@ footer #logo {
   font-size: 1.2em;
   transition: background-color 0.3s ease;
 }
-.grid-contact input[type=submit]:hover {
+.grid-contact input[type="submit"]:hover {
   border: 1px solid rgba(250, 250, 250, 0.062745098);
   background-color: rgba(0, 189, 202, 0.062745098);
   color: rgb(255, 255, 255);
 }
-.grid-contact input[type=submit]:active {
+.grid-contact input[type="submit"]:active {
   transform: scale(0.95); /* Escala el botón al 98% de su tamaño original */
   box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
 }
@@ -360,7 +360,7 @@ footer #logo {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   opacity: 0.4;
 }
 .mainServices h2 {
@@ -489,12 +489,12 @@ footer #logo {
     justify-content: center;
     font-size: 50px;
     font-weight: lighter;
-    color: #00F0FF;
+    color: #00f0ff;
     padding-top: 5rem;
   }
   .main-index .main-section h4 {
     font-family: "Arimo", sans-serif;
-    font-size: 20PX;
+    font-size: 20px;
     font-weight: 7;
     color: white;
     margin: 8.125rem;
@@ -504,7 +504,7 @@ footer #logo {
     justify-content: center;
     font-size: 50px;
     font-weight: lighter;
-    color: #00F0FF;
+    color: #00f0ff;
     margin: 80px;
   }
   .main-index #services-cards a img {
@@ -585,8 +585,8 @@ footer #logo {
     font-size: 1.2em;
     margin-bottom: 5px;
   }
-  .grid-contact input[type=text],
-  .grid-contact input[type=email],
+  .grid-contact input[type="text"],
+  .grid-contact input[type="email"],
   .grid-contact textarea {
     width: 100%;
     padding: 10px;
@@ -595,10 +595,10 @@ footer #logo {
     border-radius: 5px;
     font-size: 1em;
   }
-  .grid-contact input[type=submit] {
+  .grid-contact input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #00F0FF;
+    background-color: #00f0ff;
     color: #000000;
     border: none;
     border-radius: 5px;
@@ -606,10 +606,10 @@ footer #logo {
     font-size: 1.2em;
     transition: background-color 0.3s ease;
   }
-  .grid-contact input[type=submit]:hover {
-    background-color: #FF9212;
+  .grid-contact input[type="submit"]:hover {
+    background-color: #ff9212;
   }
-  .grid-contact input[type=submit]:active {
+  .grid-contact input[type="submit"]:active {
     transform: scale(0.95); /* Escala el botón al 98% de su tamaño original */
     box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
   }
@@ -713,11 +713,16 @@ footer #logo {
     top: 100%; /* Alinea el menú desplegable justo debajo del navbar */
     right: 0;
     z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
-    background-color: rgba(27, 32, 32, 0.3215686275); /* Opcional: establece el color de fondo */
+    background-color: rgba(
+      27,
+      32,
+      32,
+      0.3215686275
+    ); /* Opcional: establece el color de fondo */
     border: 1px solid rgba(0, 0, 0, 0.1764705882); /* Opcional: añade un borde */
     border-radius: 5px;
     -webkit-backdrop-filter: blur 6.4px;
-            backdrop-filter: blur 6.4px;
+    backdrop-filter: blur 6.4px;
     padding: 0.5rem 1rem; /* Opcional: añade espacio interno */
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
@@ -745,12 +750,12 @@ footer #logo {
     justify-content: center;
     font-size: 50px;
     font-weight: lighter;
-    color: #00F0FF;
+    color: #00f0ff;
     padding-top: 5rem;
   }
   .main-index .main-section h4 {
     font-family: "Arimo", sans-serif;
-    font-size: 20PX;
+    font-size: 20px;
     font-weight: 7;
     color: white;
     margin: 8.125rem;
@@ -760,7 +765,7 @@ footer #logo {
     justify-content: center;
     font-size: 50px;
     font-weight: lighter;
-    color: #00F0FF;
+    color: #00f0ff;
     margin: 80px;
   }
   .main-index #services-cards a img {
@@ -841,8 +846,8 @@ footer #logo {
     font-size: 1.2em;
     margin-bottom: 5px;
   }
-  .grid-contact input[type=text],
-  .grid-contact input[type=email],
+  .grid-contact input[type="text"],
+  .grid-contact input[type="email"],
   .grid-contact textarea {
     width: 100%;
     padding: 10px;
@@ -851,10 +856,10 @@ footer #logo {
     border-radius: 5px;
     font-size: 1em;
   }
-  .grid-contact input[type=submit] {
+  .grid-contact input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #00F0FF;
+    background-color: #00f0ff;
     color: #000000;
     border: none;
     border-radius: 5px;
@@ -862,11 +867,11 @@ footer #logo {
     font-size: 1.2em;
     transition: background-color 0.3s ease;
   }
-  .grid-contact input[type=submit]:hover {
+  .grid-contact input[type="submit"]:hover {
     background-color: rgba(0, 189, 202, 0.6549019608);
     color: rgb(0, 0, 0);
   }
-  .grid-contact input[type=submit]:active {
+  .grid-contact input[type="submit"]:active {
     transform: scale(0.95); /* Escala el botón al 98% de su tamaño original */
     box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
   }
@@ -923,7 +928,12 @@ footer #logo {
     top: 100%; /* Alinea el menú desplegable justo debajo del navbar */
     right: 0;
     z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
-    background-color: rgba(27, 32, 32, 0.3215686275); /* Opcional: establece el color de fondo */
+    background-color: rgba(
+      27,
+      32,
+      32,
+      0.3215686275
+    ); /* Opcional: establece el color de fondo */
     border: 1px solid #070707; /* Opcional: añade un borde */
     padding: 0.5rem 0.4rem; /* Opcional: añade espacio interno */
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
@@ -939,7 +949,7 @@ footer #logo {
   .header-index .nombre-home h2 {
     font-size: 20px;
     font-weight: 200;
-    color: #00F0FF;
+    color: #00f0ff;
     margin-left: 5px;
     margin-bottom: 150px;
   }
@@ -957,7 +967,7 @@ footer #logo {
     cursor: pointer;
     outline: none;
     font-size: 16px;
-    color: #00F0FF;
+    color: #00f0ff;
     text-decoration: none;
     width: -moz-fit-content;
     width: fit-content; /* Ancho del botón ajustado al contenido */
@@ -998,12 +1008,12 @@ footer #logo {
     justify-content: center;
     font-size: 30px;
     font-weight: lighter;
-    color: #00F0FF;
+    color: #00f0ff;
     padding-top: 5rem;
   }
   .main-index .main-section h4 {
     font-family: "Arimo", sans-serif;
-    font-size: 12PX;
+    font-size: 12px;
     font-weight: 7;
     color: white;
     margin: 10px;
@@ -1014,7 +1024,7 @@ footer #logo {
     justify-content: center;
     font-size: 30px;
     font-weight: lighter;
-    color: #00F0FF;
+    color: #00f0ff;
     margin: 80px;
   }
   .main-index #services-cards a img {
@@ -1032,7 +1042,21 @@ footer #logo {
   }
   .main-project {
     height: 1700px;
-    background-image: linear-gradient(to left bottom, #000000, #000000, #000000, #000000, #000000, #1b1417, #2c212a, #3d303f, #565778, #5686b3, #35bae4, #00f0ff);
+    background-image: linear-gradient(
+      to left bottom,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #1b1417,
+      #2c212a,
+      #3d303f,
+      #565778,
+      #5686b3,
+      #35bae4,
+      #00f0ff
+    );
   }
   .main-project .projects {
     display: flex;
@@ -1097,8 +1121,8 @@ footer #logo {
     font-size: 1.2em;
     margin-bottom: 5px;
   }
-  .grid-contact input[type=text],
-  .grid-contact input[type=email],
+  .grid-contact input[type="text"],
+  .grid-contact input[type="email"],
   .grid-contact textarea {
     width: 100%;
     padding: 10px;
@@ -1107,10 +1131,10 @@ footer #logo {
     border-radius: 5px;
     font-size: 1em;
   }
-  .grid-contact input[type=submit] {
+  .grid-contact input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #00F0FF;
+    background-color: #00f0ff;
     color: #000000;
     border: none;
     border-radius: 5px;
@@ -1118,10 +1142,10 @@ footer #logo {
     font-size: 1.2em;
     transition: background-color 0.3s ease;
   }
-  .grid-contact input[type=submit]:hover {
-    background-color: #FF9212;
+  .grid-contact input[type="submit"]:hover {
+    background-color: #ff9212;
   }
-  .grid-contact input[type=submit]:active {
+  .grid-contact input[type="submit"]:active {
     transform: scale(0.95); /* Escala el botón al 98% de su tamaño original */
     box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
   }
@@ -1179,7 +1203,12 @@ footer #logo {
     top: 100%; /* Alinea el menú desplegable justo debajo del navbar */
     right: 0;
     z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
-    background-color: rgba(27, 32, 32, 0.3215686275); /* Opcional: establece el color de fondo */
+    background-color: rgba(
+      27,
+      32,
+      32,
+      0.3215686275
+    ); /* Opcional: establece el color de fondo */
     border: 1px solid #070707; /* Opcional: añade un borde */
     padding: 0.5rem 0.55rem; /* Opcional: añade espacio interno */
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
@@ -1210,7 +1239,7 @@ footer #logo {
     cursor: pointer;
     outline: none;
     font-size: 12px;
-    color: #00F0FF;
+    color: #00f0ff;
     text-decoration: none;
     width: -moz-fit-content;
     width: fit-content; /* Ancho del botón ajustado al contenido */
@@ -1251,12 +1280,12 @@ footer #logo {
     justify-content: center;
     font-size: 24px;
     font-weight: lighter;
-    color: #00F0FF;
+    color: #00f0ff;
     padding-top: 5rem;
   }
   .main-index .main-section h4 {
     font-family: "Arimo", sans-serif;
-    font-size: 12PX;
+    font-size: 12px;
     font-weight: 7;
     color: white;
     margin: 50px;
@@ -1266,7 +1295,7 @@ footer #logo {
     justify-content: center;
     font-size: 24px;
     font-weight: lighter;
-    color: #00F0FF;
+    color: #00f0ff;
     margin: 80px;
   }
   .main-index #services-cards a img {
@@ -1349,8 +1378,8 @@ footer #logo {
     font-size: 1.2em;
     margin-bottom: 5px;
   }
-  .grid-contact input[type=text],
-  .grid-contact input[type=email],
+  .grid-contact input[type="text"],
+  .grid-contact input[type="email"],
   .grid-contact textarea {
     width: 100%;
     padding: 10px;
@@ -1359,10 +1388,10 @@ footer #logo {
     border-radius: 5px;
     font-size: 1em;
   }
-  .grid-contact input[type=submit] {
+  .grid-contact input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #00F0FF;
+    background-color: #00f0ff;
     color: #000000;
     border: none;
     border-radius: 5px;
@@ -1370,10 +1399,10 @@ footer #logo {
     font-size: 1.2em;
     transition: background-color 0.3s ease;
   }
-  .grid-contact input[type=submit]:hover {
-    background-color: #FF9212;
+  .grid-contact input[type="submit"]:hover {
+    background-color: #ff9212;
   }
-  .grid-contact input[type=submit]:active {
+  .grid-contact input[type="submit"]:active {
     transform: scale(0.95); /* Escala el botón al 98% de su tamaño original */
     box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
   }
@@ -1432,7 +1461,12 @@ footer #logo {
     top: 100%; /* Alinea el menú desplegable justo debajo del navbar */
     right: 0;
     z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
-    background-color: rgba(27, 32, 32, 0.3215686275); /* Opcional: establece el color de fondo */
+    background-color: rgba(
+      27,
+      32,
+      32,
+      0.3215686275
+    ); /* Opcional: establece el color de fondo */
     border: 1px solid #070707; /* Opcional: añade un borde */
     padding: 0.5rem 0.55rem; /* Opcional: añade espacio interno */
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
@@ -1465,7 +1499,7 @@ footer #logo {
     cursor: pointer;
     outline: none;
     font-size: 12px;
-    color: #00F0FF;
+    color: #00f0ff;
     text-decoration: none;
     width: -moz-fit-content;
     width: fit-content; /* Ancho del botón ajustado al contenido */
@@ -1504,12 +1538,12 @@ footer #logo {
     justify-content: center;
     font-size: 24px;
     font-weight: lighter;
-    color: #00F0FF;
+    color: #00f0ff;
     padding-top: 50px;
   }
   .main-index .main-section h4 {
     font-family: "Arimo", sans-serif;
-    font-size: 12PX;
+    font-size: 12px;
     font-weight: 7;
     color: white;
     margin: 15px;
@@ -1520,7 +1554,7 @@ footer #logo {
     justify-content: center;
     font-size: 24px;
     font-weight: lighter;
-    color: #00F0FF;
+    color: #00f0ff;
     margin: 40px;
   }
   .main-index #services-cards a img {
@@ -1603,8 +1637,8 @@ footer #logo {
     font-size: 12px;
     margin-bottom: 5px;
   }
-  .grid-contact input[type=text],
-  .grid-contact input[type=email],
+  .grid-contact input[type="text"],
+  .grid-contact input[type="email"],
   .grid-contact textarea {
     width: 100%;
     padding: 10px;
@@ -1613,10 +1647,10 @@ footer #logo {
     border-radius: 5px;
     font-size: 1em;
   }
-  .grid-contact input[type=submit] {
+  .grid-contact input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #00F0FF;
+    background-color: #00f0ff;
     color: #000000;
     border: none;
     border-radius: 5px;
@@ -1624,10 +1658,10 @@ footer #logo {
     font-size: 1.2em;
     transition: background-color 0.3s ease;
   }
-  .grid-contact input[type=submit]:hover {
-    background-color: #FF9212;
+  .grid-contact input[type="submit"]:hover {
+    background-color: #ff9212;
   }
-  .grid-contact input[type=submit]:active {
+  .grid-contact input[type="submit"]:active {
     transform: scale(0.95); /* Escala el botón al 98% de su tamaño original */
     box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
   }
@@ -1646,4 +1680,4 @@ footer #logo {
     color: #dc3545;
     margin-top: 5px;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

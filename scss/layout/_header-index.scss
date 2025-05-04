@@ -1,86 +1,86 @@
-.header-index{
-    min-height: 100vh;
-    position: relative;
-    background-size: cover;
-    width: 100%;
-    height:100vh;
-    padding: .625rem;
-    
-video{
-  position: absolute;
-  top: 0;
-  left: 0;
+.header-index {
+  min-height: 100vh;
+  position: relative;
+  background-size: cover;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-      #logo{
-        width: 121px;
-        height: 41px;
+  height: 100vh;
+  padding: 0.625rem;
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #logo {
+    width: 121px;
+    height: 41px;
+  }
+  .flexbox-nav {
+    background-color: #1b20202c;
+  }
+  .flexbox-ul {
+    list-style: none;
+    @include flex(row, end, center, 80px);
+    font-size: 1.25rem;
+    position: sticky;
+    top: 0;
+  }
+  .flexbox-ul li a {
+    color: $color-secundario-texto;
+    text-decoration: none;
+    &:hover {
+      color: $color-principal-texto;
+      text-decoration: none;
     }
-    .flexbox-nav{
-        background-color: #1b20202c;
-    }
-    .flexbox-ul{
-        list-style: none;
-        @include flex(row,end,center,80px);
-        font-size: 1.25rem;
-        position: sticky;
-        top: 0;
-    }
-    .flexbox-ul li a{
-        color: $color-secundario-texto;
-        text-decoration: none;
-        &:hover{
-          color: $color-principal-texto;
-          text-decoration: none;
-        }
-    }
-    .nombre-home h1{
-      color: $color-secundario-texto;
-      font-size: 120px;
-      letter-spacing: 50px;
-      font-weight: lighter;
-      position: relative;
-      z-index: 2;
-    }
-    .nombre-home{
+  }
+  .nombre-home h1 {
+    color: $color-secundario-texto;
+    font-size: 120px;
+    letter-spacing: 50px;
+    font-weight: bolder;
+    position: relative;
+    z-index: 2;
+  }
+  .nombre-home {
     margin-left: 30px;
     padding-top: 150px;
+  }
+  .nombre-home h2 {
+    font-size: 50px;
+    font-weight: 100;
+    color: $color-principal-texto;
+    margin-left: 30px;
+    margin-bottom: 120px;
+    position: relative;
+    z-index: 2;
+  }
+  section a {
+    @include flex(column, none, center, none);
+    padding: 10px 34px;
+    background: #fff70012; /* Background color on hover */
+    backdrop-filter: (0.5625rem);
+    border: 1px solid $color-terciario; /* Border color */
+    border-radius: 44px; /* Round border edges */
+    cursor: pointer;
+    outline: none;
+    font-weight: lighter;
+    font-size: 28px;
+    color: $color-terciario;
+    text-decoration: none;
+    width: fit-content; /* Ancho del botón ajustado al contenido */
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    &:hover {
+      background: $color-terciario; /* Background color on hover */
+      color: #000000; /* Text color on hover */
     }
-    .nombre-home h2{
-        font-size: 50px;
-        font-weight:200;
-        color:$color-principal-texto;
-        margin-left: 30px;
-        margin-bottom: 120px;
-        position: relative;
-        z-index: 2;
+    &:active {
+      transform: scale(0.97); /* Escala el botón al 98% de su tamaño original */
+      box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
     }
-    section a{
-      @include flex (column,none,center,none);
-      padding: 10px 34px;
-      background:  #fff70012; /* Background color on hover */
-      backdrop-filter: (.5625rem);
-      border: 1px solid $color-terciario; /* Border color */
-      border-radius: 44px; /* Round border edges */
-      cursor: pointer;
-      outline: none;
-      font-weight: lighter;
-        font-size: 28px;
-        color: $color-terciario;
-        text-decoration: none;
-        width: fit-content; /* Ancho del botón ajustado al contenido */
-        margin: 0 auto;
-        position: relative;
-        z-index: 2;
-        &:hover{
-          background: $color-terciario; /* Background color on hover */
-          color: #000000; /* Text color on hover */
-        }
-        &:active{
-          transform: scale(0.97); /* Escala el botón al 98% de su tamaño original */
-          box-shadow: 0px 2px 22px 0px rgba(47, 47, 47, 0.295); /* Reduce la sombra */
-        }
-    }
+  }
 }
